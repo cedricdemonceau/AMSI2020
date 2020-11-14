@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+
+\newif\ifindustry
+
+\industryfalse
+
+%% ---------------------------------
+%% |      Additional packages      |
+%% ---------------------------------
+%% 
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, margin=1in]{geometry} %% margins
+\usepackage{natbib} %% References
+\usepackage{graphicx} %http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Graphics_storage
+\usepackage[export]{adjustbox}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{rotating}
+\lstset{
+	tabsize=2
+}
+\usepackage{amsmath,amsfonts,amssymb}	% AMS mathematical facilities, fonts and symbols
+\usepackage{lastpage}
+\usepackage[bookmarks=true, colorlinks=false]{hyperref} % Links - must be last package
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{./figures/}} %Use curly braces for each path to add 
+
+%% ---------------------------------
+%% | Information about the report  |
+%% ---------------------------------
+
+\newcommand{\mytype}{Laboratoire}
+\newcommand{\mytitle}{Laboratoire}
+\newcommand{\mystream}{IHDCB335 - Analyse et Modélisation des Systèmes d’Information}
+
+\newcommand{\firststudentname}{Nicolay Matthias}
+\newcommand{\secondstudentname}{Demonceau Cédric}
+
+\newcommand{\myyear}{2020}
+\newcommand{\duedate}{10/12/2020}
+
+% Describe separation hints here:
+\hyphenation{
+% Man-age-ment
+}
+
+
+%% ------------------------
+%% |    Including files   |
+%% ------------------------
+% Only files listed here will be included!
+% Useful command for partially translating the document (for bug-fixing e.g.)
+\includeonly{%
+titlepage,
+text/game,
+text/play
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here, main documents begins %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\input{titlepage}
+\input{text/game}
+\input{text/play}
+
+%% -----------------
+%% |   Main part   |
+%% -----------------
+\date{}
+
+\pagestyle{plain}
+
+%% --------------------
+%% |   Bibliography   |
+%% --------------------
+
+% Style
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

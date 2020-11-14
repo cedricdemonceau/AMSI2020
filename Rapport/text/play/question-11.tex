@@ -1,0 +1,60 @@
+%% question-11.tex
+%%
+
+%% ==============================
+\subsection{\textsc{Ocl} - Contrainte d'unicité}
+\label{sec:question11}
+%% ==============================
+
+La contrainte suivante (Listing \ref{lst:uniproc}) permet de vérifier que le nom d'une procédure est unique.
+
+\begin{lstlisting}[caption={Unicité des noms des procédures},captionpos=b,label={lst:uniproc},language=OCL]
+context Procedure inv:
+	Procedure.allInstance()->forAll(p1, p2 
+		| p1 <> p2 implies p1.name <> p2.name)
+\end{lstlisting}
+
+Afin de vérifier que la procédure \textbf{Cody} est bien unique, nous utilisons la contrainte OCL ci-dessous (Listing \ref{lst:unicody}).
+
+\begin{lstlisting}[caption={Unicité de la procédure Cody dans le programme},captionpos=b,label={lst:unicody},language=OCL]
+context Programme inv:
+	self.declarations.size(declaration |
+		declaration.oclIsTypeOf(Procedure) and 
+		declaration.name == "Cody") == 1
+\end{lstlisting}
+
+La contrainte permettant de vérifier qu'une variable globale porte un nom unique est défini comme suit (Listing \ref{lst:univar}) :
+
+\begin{lstlisting}[caption={Unicité des noms des variables},captionpos=b,label={lst:univar},language=OCL]
+context Programme inv:
+	self.declarations.forAll(d1, d2 |
+		d1.oclIsTypeOf(Variable) and
+		d2.oclIsTypeOf(Variable) and
+		d1 <> d2 implies d1.name <> d2.name)
+\end{lstlisting}
+
+La contrainte ci-après (Listing \ref{lst:uniparam}) permet l'unicité des noms des paramètres d'une procédure.
+
+\begin{lstlisting}[caption={Unicité des noms des paramètres d'une procédure},captionpos=b,label={lst:uniparam},language=OCL]
+context Procedure inv:
+	self.parametres.forAll(p1, p2 |
+		p1 <> p2 implies p1.name <> p2.name)
+\end{lstlisting}
+
+Une procédure va aussi devoir avoir une unicité pour les noms des variables de celle-ci. Cette unicité est indiqué via la contrainte OCL suivante (Listing \ref{lst:univarproc})
+
+\begin{lstlisting}[caption={Unicité des noms des variables d'une procédure},captionpos=b,label={lst:univarproc},language=OCL]
+context Procedure inv:
+	self.declarations.forAll(d1, d2 |
+		d1.oclIsTypeOf(Variable) and
+		d2.oclIsTypeOf(Variable) and
+		d1 <> d2 implies d1.name <> d2.name)
+\end{lstlisting}
+
+Enfin, la contrainte OCL ci-dessous (Listing \ref{lst:unirecord}) permet l'unicité des noms des champs d'un Enregistrement
+
+\begin{lstlisting}[caption={Unicité des noms des champs d'un enregistrement},captionpos=b,label={lst:unirecord},language=OCL]
+context Enregistrement inv:
+	self.champs.forAll(c1, c2 | 
+		c1 <> c2 implies c1.name <> c2.name)
+\end{lstlisting} 
