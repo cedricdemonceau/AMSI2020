@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Amsi" version="4">
+  <OBJECT>
+    <ID name="Amsi" mc="Infrastructure.DiagramSet" uid="bffd3747-82ad-48b7-892b-93ec80a613b4"/>
+    <PID name="Amsi" mc="Standard.Project" uid="c10b2578-acc6-45ea-b7d2-efc131c2d43e"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Amsi]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

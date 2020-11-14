@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="amsi" version="4">
+  <OBJECT>
+    <ID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Amsi" mc="Standard.Project" uid="c10b2578-acc6-45ea-b7d2-efc131c2d43e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[amsi]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Jeu" mc="Standard.Class" uid="e73571a4-2f6e-439c-ac17-55635f5dce48"/>
+        <COMPID name="Joueurs" mc="Standard.Class" uid="d1dfe4a0-7361-4047-a27d-421a4d4ef2c1"/>
+        <COMPID name="Avatar" mc="Standard.Class" uid="1cc5d05e-f3cb-43f8-84aa-fecf432fb916"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
