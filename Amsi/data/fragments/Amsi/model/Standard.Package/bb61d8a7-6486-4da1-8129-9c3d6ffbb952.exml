@@ -20,9 +20,12 @@
         <COMPID name="match" mc="Standard.Class" uid="8534c215-fe1b-41be-97a1-4b2b966861df"/>
         <COMPID name="rencontre" mc="Standard.Class" uid="511355ea-4965-43b3-b0cf-8e87f4d9af55"/>
         <COMPID name="Monde" mc="Standard.Class" uid="6c9656d7-5693-4227-abe1-20f620979819"/>
+        <COMPID name="Class" mc="Standard.Class" uid="1c726bef-cb21-48c8-a115-c6194a2608f0"/>
+        <COMPID name="Class1" mc="Standard.Class" uid="74303f48-cbb9-4ad1-a97c-4b5e51dee7e3"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
+        <COMPID name="Q 4.2" mc="Standard.ClassDiagram" uid="890fc346-828e-435a-92b2-42591751c949"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

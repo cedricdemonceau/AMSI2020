@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="class" mc="Standard.AssociationEnd" uid="8f8cd441-8272-4151-85d6-9d0f5a162ad8"/>
+          <ID name="est constitué" mc="Standard.AssociationEnd" uid="8f8cd441-8272-4151-85d6-9d0f5a162ad8"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsComposition</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -30,7 +30,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[class]]></ATT>
+            <ATT name="Name"><![CDATA[est constitué]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -57,7 +57,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="class" mc="Standard.AssociationEnd" uid="8f8cd441-8272-4151-85d6-9d0f5a162ad8"/>
+                    <COMPID name="est constitué" mc="Standard.AssociationEnd" uid="8f8cd441-8272-4151-85d6-9d0f5a162ad8"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>

@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="joueurs" mc="Standard.AssociationEnd" uid="3b240184-c5f6-4661-8e7b-901d0263017a"/>
+          <ID name="rassemble" mc="Standard.AssociationEnd" uid="3b240184-c5f6-4661-8e7b-901d0263017a"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsComposition</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -30,7 +30,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[joueurs]]></ATT>
+            <ATT name="Name"><![CDATA[rassemble]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -57,7 +57,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="joueurs" mc="Standard.AssociationEnd" uid="3b240184-c5f6-4661-8e7b-901d0263017a"/>
+                    <COMPID name="rassemble" mc="Standard.AssociationEnd" uid="3b240184-c5f6-4661-8e7b-901d0263017a"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
@@ -78,7 +78,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="match" mc="Standard.AssociationEnd" uid="0bd5993d-070a-4dff-8073-74087c71f98f"/>
+          <ID name="possède" mc="Standard.AssociationEnd" uid="0bd5993d-070a-4dff-8073-74087c71f98f"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsComposition</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -91,7 +91,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[match]]></ATT>
+            <ATT name="Name"><![CDATA[possède]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -118,7 +118,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="match" mc="Standard.AssociationEnd" uid="0bd5993d-070a-4dff-8073-74087c71f98f"/>
+                    <COMPID name="possède" mc="Standard.AssociationEnd" uid="0bd5993d-070a-4dff-8073-74087c71f98f"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
