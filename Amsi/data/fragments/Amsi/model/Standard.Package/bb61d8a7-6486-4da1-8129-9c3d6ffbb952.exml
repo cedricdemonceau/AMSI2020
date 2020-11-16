@@ -20,8 +20,133 @@
         <COMPID name="match" mc="Standard.Class" uid="8534c215-fe1b-41be-97a1-4b2b966861df"/>
         <COMPID name="rencontre" mc="Standard.Class" uid="511355ea-4965-43b3-b0cf-8e87f4d9af55"/>
         <COMPID name="Monde" mc="Standard.Class" uid="6c9656d7-5693-4227-abe1-20f620979819"/>
-        <COMPID name="Class" mc="Standard.Class" uid="1c726bef-cb21-48c8-a115-c6194a2608f0"/>
-        <COMPID name="Class1" mc="Standard.Class" uid="74303f48-cbb9-4ad1-a97c-4b5e51dee7e3"/>
+        <COMPID name="Jeu" mc="Standard.Class" uid="1c726bef-cb21-48c8-a115-c6194a2608f0"/>
+        <COMPID name="Joueurs" mc="Standard.Class" uid="74303f48-cbb9-4ad1-a97c-4b5e51dee7e3"/>
+        <COMPID name="Avatar" mc="Standard.Class" uid="c0645030-6830-4281-a4d1-7d6e2aa0c2f7"/>
+        <COMPID name="Match" mc="Standard.Class" uid="b3cbfc7c-c551-460b-939f-8165cf2015bb"/>
+        <COMPID name="Rencontre" mc="Standard.Class" uid="b57ff51a-ff73-4702-b29c-ee8750dece09"/>
+        <COMPID name="Monde" mc="Standard.Class" uid="8b499c65-cc42-4930-a9e4-7a0f895934d8"/>
+        <OBJECT>
+          <ID name="Aspects" mc="Standard.Enumeration" uid="fe59c7a9-f6c9-4d83-97dc-9b790b35d1a7"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Aspects]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedAttribute">
+              <OBJECT>
+                <ID name="Aspect 1" mc="Standard.Attribute" uid="4227fa29-e065-4a95-9961-e200bcadccf2"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[Aspect 1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Aspect 2" mc="Standard.Attribute" uid="46656dd2-966a-490c-94fc-034710e120fb"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[Aspect 2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Aspect 3" mc="Standard.Attribute" uid="2fe30dcc-21ce-4dde-89ae-3e27ea2f9eda"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[Aspect 3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="..." mc="Standard.Attribute" uid="b429b8c0-2296-4f75-85de-ddd83df995b0"/>
+                <ATTRIBUTES>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="TargetIsClass">false</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[...]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Inventaire" mc="Standard.Enumeration" uid="7447fd56-c409-42bf-8a26-95472b8f21ea"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Inventaire]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
