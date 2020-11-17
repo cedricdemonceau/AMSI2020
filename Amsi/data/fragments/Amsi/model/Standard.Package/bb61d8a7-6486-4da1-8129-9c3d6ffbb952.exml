@@ -38,98 +38,38 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="OwnedAttribute">
+            <COMP relation="Value">
               <OBJECT>
-                <ID name="Aspect 1" mc="Standard.Attribute" uid="4227fa29-e065-4a95-9961-e200bcadccf2"/>
+                <ID name="Aspect 1" mc="Standard.EnumerationLiteral" uid="57aca8b1-7a3c-401e-b051-fbf1d9507c59"/>
                 <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
                   <ATT name="Name"><![CDATA[Aspect 1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Aspect 2" mc="Standard.Attribute" uid="46656dd2-966a-490c-94fc-034710e120fb"/>
+                <ID name="Aspect 2" mc="Standard.EnumerationLiteral" uid="08c51948-0921-4c67-a405-cc679fc0b3d0"/>
                 <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
                   <ATT name="Name"><![CDATA[Aspect 2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Aspect 3" mc="Standard.Attribute" uid="2fe30dcc-21ce-4dde-89ae-3e27ea2f9eda"/>
+                <ID name="Aspect 3" mc="Standard.EnumerationLiteral" uid="d20d262e-5320-4f3e-be07-8f77a94f0126"/>
                 <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
                   <ATT name="Name"><![CDATA[Aspect 3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="..." mc="Standard.Attribute" uid="b429b8c0-2296-4f75-85de-ddd83df995b0"/>
+                <ID name="..." mc="Standard.EnumerationLiteral" uid="7e733b86-3ddb-4379-938a-61454d130f8b"/>
                 <ATTRIBUTES>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="TargetIsClass">false</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
                   <ATT name="Name"><![CDATA[...]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
@@ -142,6 +82,228 @@
         <COMPID name="Items" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
         <COMPID name="Personnage" mc="Standard.Class" uid="62fe1ad5-7c05-4961-bc7e-244cab76fb34"/>
         <COMPID name="Zombie" mc="Standard.Class" uid="45b73631-6d3c-40a5-8dfe-865602750927"/>
+        <COMPID name="Cases" mc="Standard.Class" uid="88db6810-6431-404f-8b0e-0952a3e928a7"/>
+        <COMPID name="Obstacle" mc="Standard.Class" uid="12ca24bc-884b-4614-b3a2-d396141f5f58"/>
+        <COMPID name="Item" mc="Standard.Class" uid="067549a5-a0ae-4a4d-bb42-7d7b95d0a58f"/>
+        <COMPID name="Franchissable" mc="Standard.Class" uid="39d4d8da-b0f0-4d41-9c7b-62bc921c990c"/>
+        <COMPID name="Infranchissable" mc="Standard.Class" uid="5222214f-04dc-4344-b083-d569d8f40efe"/>
+        <OBJECT>
+          <ID name="Franchissable" mc="Standard.Enumeration" uid="906d9f4a-c51e-4d76-9de5-8574e7e14bcd"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Franchissable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Ronce" mc="Standard.EnumerationLiteral" uid="2253ff49-5f86-4526-b19c-04bb7d1825b1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Ronce]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Buisson" mc="Standard.EnumerationLiteral" uid="1847b6ec-6839-47af-94a2-01d11ec77a47"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Buisson]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Tronc d'arbe" mc="Standard.EnumerationLiteral" uid="54f0d828-2bc8-42fa-ad91-6addf383c3e9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Tronc d'arbe]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Tête de mort" mc="Standard.EnumerationLiteral" uid="e9aee754-5e88-4e54-867e-e1847633ffe4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Tête de mort]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Infranchissable" mc="Standard.Enumeration" uid="448f6bc2-7ff1-4e81-badd-0131d6d3f7ae"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Infranchissable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Mur" mc="Standard.EnumerationLiteral" uid="e65547ac-bc39-4065-a825-8c1da1686332"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Mur]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Arbre" mc="Standard.EnumerationLiteral" uid="ccdc7b77-82fd-4b33-912c-e10873b22a68"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Arbre]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Menhir" mc="Standard.EnumerationLiteral" uid="bbfe6198-4071-4165-9df5-87af71ea6041"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Menhir]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Aspects Payants" mc="Standard.Enumeration" uid="ea034409-cc3f-47b3-9b19-7993210433da"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Aspects Payants]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Payant 1" mc="Standard.EnumerationLiteral" uid="008ffdad-e426-4b4d-bf40-487ee0dcdc89"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Payant 1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Payant 2" mc="Standard.EnumerationLiteral" uid="4eb5d1e5-8340-4925-a45e-ed550e9a664c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Payant 2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Payant 3" mc="Standard.EnumerationLiteral" uid="dfcd248e-3f45-4388-9a1a-27983dd04566"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Payant 3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Type Item" mc="Standard.Enumeration" uid="d237f6b8-3986-4abc-927c-fa3349f8ffc6"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Type Item]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Boisson" mc="Standard.EnumerationLiteral" uid="61170526-cfcf-4313-80dc-7a8df0daff26"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Boisson]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Nourriture" mc="Standard.EnumerationLiteral" uid="70b2e85d-67f1-4092-a758-f8669f07610e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Nourriture]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Munition" mc="Standard.EnumerationLiteral" uid="189cf804-7db3-490c-bf4e-d040559b19d7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Munition]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Bottes pare-feu" mc="Standard.EnumerationLiteral" uid="dc694bbc-343e-41c9-9d05-b1860140095e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Bottes pare-feu]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Bottes à crampons" mc="Standard.EnumerationLiteral" uid="f3165634-eac2-4ab2-8d6b-416d47c91061"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Bottes à crampons]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Kit de plongée" mc="Standard.EnumerationLiteral" uid="4cfe0780-877e-4309-b9d5-c08f0c6f82bf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Kit de plongée]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Bonus" mc="Standard.EnumerationLiteral" uid="79da19c3-c1af-4f41-b73e-fe77356219b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Bonus]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Radar" mc="Standard.EnumerationLiteral" uid="a9e8c7b7-3967-4980-933b-c5e81b26a961"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Radar]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Carte" mc="Standard.EnumerationLiteral" uid="9cf3a443-e9d6-4f58-9069-fff785f8b40d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Carte]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Graal" mc="Standard.Class" uid="9e46ebe6-9772-4fb1-bbc7-61c96672cf50"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
