@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Détail" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Physique" version="4">
   <OBJECT>
-    <ID name="Détail" mc="Standard.Class" uid="8f0f0be3-d09d-4eb4-af9b-cafa3ca497fd"/>
+    <ID name="Physique" mc="Standard.Class" uid="c715e45f-23b0-488f-885c-57728c9273a3"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Détail]]></ATT>
+      <ATT name="Name"><![CDATA[Physique]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="Match" mc="Standard.Attribute" uid="ed90912b-3969-4b30-823b-de8874a7df23"/>
+          <ID name="Pseudo" mc="Standard.Attribute" uid="a010268c-bf7e-4541-a00c-3e693eaa2e0a"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -31,36 +31,27 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Match]]></ATT>
+            <ATT name="Name"><![CDATA[Pseudo]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="Match" mc="Standard.Class" uid="b3cbfc7c-c551-460b-939f-8165cf2015bb"/>
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
         <OBJECT>
-          <ID name="Id opposant" mc="Standard.Attribute" uid="e34eedc3-a21c-42ef-99bf-25ae88fce90c"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="7a82cc33-23a7-4f29-9d78-aff19640473a"/>
           <ATTRIBUTES>
-            <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="TargetIsClass">false</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Id opposant]]></ATT>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Type">
-              <FOREIGNID name="integer" mc="Standard.DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            <LINK relation="SuperType">
+              <ID name="Joueurs" mc="Standard.Class" uid="74303f48-cbb9-4ad1-a97c-4b5e51dee7e3"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

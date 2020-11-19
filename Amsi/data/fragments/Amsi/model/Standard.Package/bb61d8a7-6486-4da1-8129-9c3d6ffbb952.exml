@@ -354,6 +354,89 @@
           </DEPENDENCIES>
         </OBJECT>
         <COMPID name="Stratégie" mc="Standard.Class" uid="01f2aa70-214d-4d1b-9567-1901c8be439d"/>
+        <COMPID name="Machine" mc="Standard.Class" uid="81700c2b-23a1-4df3-980a-7986b7351407"/>
+        <COMPID name="Physique" mc="Standard.Class" uid="c715e45f-23b0-488f-885c-57728c9273a3"/>
+        <OBJECT>
+          <ID name="Difficulté" mc="Standard.Enumeration" uid="e83a8615-4b67-4395-9fd4-d48c620aa21b"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Difficulté]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Débutant" mc="Standard.EnumerationLiteral" uid="7b5c7de3-fd1d-4dd1-86f2-6b7a48a1f523"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Débutant]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Avancé" mc="Standard.EnumerationLiteral" uid="054aab5e-ceaf-4fc5-bba2-c25d45fb349c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Avancé]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Expert" mc="Standard.EnumerationLiteral" uid="82dea140-4dd0-4e2d-8c8c-4653d0c88ef8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Expert]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Aspect Zone" mc="Standard.Enumeration" uid="bb14e904-2d0f-439f-8446-d5310424d93f"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Aspect Zone]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Feu" mc="Standard.EnumerationLiteral" uid="4528db5d-9fbc-444b-86c0-77180168eda5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Feu]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Eau" mc="Standard.EnumerationLiteral" uid="ea83b801-0160-4d20-bf3e-e61b3518054e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Eau]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Glace" mc="Standard.EnumerationLiteral" uid="b17bbc96-6e7e-4f94-9375-ab693a4df1ef"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Glace]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Aspect" mc="Standard.Class" uid="1593ea86-d90b-428c-8a4f-93391ad9617f"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>

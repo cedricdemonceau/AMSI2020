@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Détail" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Machine" version="4">
   <OBJECT>
-    <ID name="Détail" mc="Standard.Class" uid="8f0f0be3-d09d-4eb4-af9b-cafa3ca497fd"/>
+    <ID name="Machine" mc="Standard.Class" uid="81700c2b-23a1-4df3-980a-7986b7351407"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Détail]]></ATT>
+      <ATT name="Name"><![CDATA[Machine]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="Match" mc="Standard.Attribute" uid="ed90912b-3969-4b30-823b-de8874a7df23"/>
+          <ID name="ID" mc="Standard.Attribute" uid="cd6ca67e-2de5-4d0a-84e0-1f517c1f00a7"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -31,17 +31,33 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Match]]></ATT>
+            <ATT name="Name"><![CDATA[ID]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="Match" mc="Standard.Class" uid="b3cbfc7c-c551-460b-939f-8165cf2015bb"/>
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="7f85abe9-d58a-4e3c-ae4e-ceaacbfce78e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Id opposant" mc="Standard.Attribute" uid="e34eedc3-a21c-42ef-99bf-25ae88fce90c"/>
+          <ID name="Difficulté" mc="Standard.Attribute" uid="78c97018-c6d1-4119-8ce8-9f3817e9f467"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -55,12 +71,29 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Id opposant]]></ATT>
+            <ATT name="Name"><![CDATA[Difficulté]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <FOREIGNID name="integer" mc="Standard.DataType" uid="00000004-0000-0009-0000-000000000000"/>
+              <REFOBJ>
+                <ID name="Difficulté" mc="Standard.Enumeration" uid="e83a8615-4b67-4395-9fd4-d48c620aa21b"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="7a8eabd5-a14f-4466-8a98-9f7800ec148f"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Joueurs" mc="Standard.Class" uid="74303f48-cbb9-4ad1-a97c-4b5e51dee7e3"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
