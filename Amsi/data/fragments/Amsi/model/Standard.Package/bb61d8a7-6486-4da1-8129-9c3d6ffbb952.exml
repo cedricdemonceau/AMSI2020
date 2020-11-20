@@ -350,6 +350,14 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="Multi-joueur" mc="Standard.EnumerationLiteral" uid="58340c48-e3fe-48b1-8436-64e8764cdb9d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Multi-joueur]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -436,7 +444,8 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
-        <COMPID name="Aspect" mc="Standard.Class" uid="1593ea86-d90b-428c-8a4f-93391ad9617f"/>
+        <COMPID name="Zone" mc="Standard.Class" uid="1593ea86-d90b-428c-8a4f-93391ad9617f"/>
+        <COMPID name="Position" mc="Standard.Class" uid="cf4d690f-dd51-414c-8816-20547fad3f27"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
