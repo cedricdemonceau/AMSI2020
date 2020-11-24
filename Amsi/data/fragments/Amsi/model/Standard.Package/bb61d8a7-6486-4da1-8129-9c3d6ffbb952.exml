@@ -446,10 +446,18 @@
         </OBJECT>
         <COMPID name="Zone" mc="Standard.Class" uid="1593ea86-d90b-428c-8a4f-93391ad9617f"/>
         <COMPID name="Position" mc="Standard.Class" uid="cf4d690f-dd51-414c-8816-20547fad3f27"/>
+        <COMPID name="Stratégie" mc="Standard.Class" uid="b1926bc1-9851-48d7-b064-0ac4514eafec"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="93077a25-facf-4a99-951c-c8714ecbd295"/>
+        <COMPID name="Module" mc="Standard.Class" uid="06e93022-a12f-4672-9273-8b64c72fa5eb"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="b6d0ee19-ae60-4924-8eeb-94b876444ff1"/>
+        <COMPID name="Vision court terme" mc="Standard.Class" uid="64caa659-7336-47b2-8a3f-827ed4a4a499"/>
+        <COMPID name="Vision long terme" mc="Standard.Class" uid="c9dfa1e4-2f70-4a56-a3ab-e75e4c3044c6"/>
+        <COMPID name="Règle" mc="Standard.Class" uid="7c6c4f47-f1b0-4eb7-9942-c15037b34f42"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
         <COMPID name="Q 4.2" mc="Standard.ClassDiagram" uid="890fc346-828e-435a-92b2-42591751c949"/>
+        <COMPID name="Q 4.7" mc="Standard.ClassDiagram" uid="c91ae7e5-2e7d-420a-b263-dba242bfdb39"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
