@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Vision court terme" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Objectif" version="4">
   <OBJECT>
-    <ID name="Vision court terme" mc="Standard.Class" uid="64caa659-7336-47b2-8a3f-827ed4a4a499"/>
+    <ID name="Objectif" mc="Standard.Class" uid="48a0749f-6442-42b6-9694-1c668c4cb546"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Vision court terme]]></ATT>
+      <ATT name="Name"><![CDATA[Objectif]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="objectif" mc="Standard.AssociationEnd" uid="0fb01721-bbcd-4804-b11b-62b19d3391ac"/>
+          <ID name="règle" mc="Standard.AssociationEnd" uid="a6f84150-2e6e-4e92-8b7e-24c562c195cc"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -30,16 +30,16 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[objectif]]></ATT>
+            <ATT name="Name"><![CDATA[règle]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Objectif" mc="Standard.Class" uid="48a0749f-6442-42b6-9694-1c668c4cb546"/>
+              <ID name="Règle" mc="Standard.Class" uid="7c6c4f47-f1b0-4eb7-9942-c15037b34f42"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="612b1850-35a1-42d6-a98f-39725552a574"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="9f483114-1632-426b-86bb-1aaea9b24a39"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -57,11 +57,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="objectif" mc="Standard.AssociationEnd" uid="0fb01721-bbcd-4804-b11b-62b19d3391ac"/>
+                    <COMPID name="règle" mc="Standard.AssociationEnd" uid="a6f84150-2e6e-4e92-8b7e-24c562c195cc"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="6c02fa4d-227d-4fcb-839c-29c66876008a"/>
+                      <ID name="" mc="Standard.Association" uid="57329195-8c65-4f40-aa31-ead4a825f2be"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -73,7 +73,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="6c02fa4d-227d-4fcb-839c-29c66876008a"/>
+              <COMPID name="" mc="Standard.Association" uid="57329195-8c65-4f40-aa31-ead4a825f2be"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
