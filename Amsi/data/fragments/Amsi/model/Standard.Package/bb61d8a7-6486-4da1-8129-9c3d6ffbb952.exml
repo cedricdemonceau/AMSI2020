@@ -4464,12 +4464,14 @@
         <COMPID name="Vision long terme" mc="Standard.Class" uid="c9dfa1e4-2f70-4a56-a3ab-e75e4c3044c6"/>
         <COMPID name="Règle" mc="Standard.Class" uid="7c6c4f47-f1b0-4eb7-9942-c15037b34f42"/>
         <COMPID name="Objectif" mc="Standard.Class" uid="48a0749f-6442-42b6-9694-1c668c4cb546"/>
+        <COMPID name="Type" mc="Standard.Class" uid="f369dfb4-9db1-4253-b492-4e562d53be1f"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
         <COMPID name="Q 4.2" mc="Standard.ClassDiagram" uid="890fc346-828e-435a-92b2-42591751c949"/>
         <COMPID name="Q 4.7" mc="Standard.ClassDiagram" uid="c91ae7e5-2e7d-420a-b263-dba242bfdb39"/>
         <COMPID name="Q 4.6" mc="Standard.ObjectDiagram" uid="e063bb9c-b8bf-4431-b4ee-b47f754fc129"/>
+        <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
