@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="82626096-c7ee-44be-95ae-6b16295e568a"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="05ed934c-ec80-4135-a3c4-16dc5a3473d8"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
@@ -25,8 +25,24 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Objet" mc="Standard.Class" uid="f51bdbab-dc6c-4676-ba72-849aaa79f303"/>
+              <ID name="Ramassable" mc="Standard.Class" uid="0ecb7747-531a-4854-b346-f9c8feb95f0d"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="2b2078c0-2ef6-4f40-be0e-34972f6ec984"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

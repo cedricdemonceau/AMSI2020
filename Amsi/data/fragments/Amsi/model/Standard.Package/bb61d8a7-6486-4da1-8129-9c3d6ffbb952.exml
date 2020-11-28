@@ -4089,7 +4089,7 @@
         <COMPID name="Nourriture" mc="Standard.Class" uid="b300b132-e161-4c3e-8c03-874917db3042"/>
         <COMPID name="Boisson" mc="Standard.Class" uid="3ff4e23b-0f11-4293-b6ff-6b34b07093b2"/>
         <COMPID name="Munition" mc="Standard.Class" uid="ccb5ee86-72b8-4d32-8db2-e6d9517e014a"/>
-        <COMPID name="Items" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
+        <COMPID name="Aide" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
         <COMPID name="Personnage" mc="Standard.Class" uid="62fe1ad5-7c05-4961-bc7e-244cab76fb34"/>
         <COMPID name="Zombie" mc="Standard.Class" uid="45b73631-6d3c-40a5-8dfe-865602750927"/>
         <COMPID name="Cases" mc="Standard.Class" uid="88db6810-6431-404f-8b0e-0952a3e928a7"/>
@@ -4474,6 +4474,12 @@
         <COMPID name="Tableau" mc="Standard.Class" uid="56b72aca-b750-4c05-bb4c-03e8f9c37c36"/>
         <COMPID name="Enregistrement" mc="Standard.Class" uid="e3db5e53-41f9-45be-a61c-2539c44922b5"/>
         <COMPID name="Champ" mc="Standard.Class" uid="9eeb09ed-200f-43ee-b670-c51c72a2991f"/>
+        <COMPID name="Ramassable" mc="Standard.Class" uid="0ecb7747-531a-4854-b346-f9c8feb95f0d"/>
+        <COMPID name="Orientation" mc="Standard.Class" uid="e8a003c1-3a85-42a4-bd19-0a14e9e4bff7"/>
+        <COMPID name="Carte" mc="Standard.Class" uid="b96948ef-a71d-426a-a014-35826d2cea9c"/>
+        <COMPID name="Radar" mc="Standard.Class" uid="f9a57b46-8ff2-4147-abbb-2e006f797b85"/>
+        <COMPID name="Cape" mc="Standard.Class" uid="78cad424-595e-4fb2-8ac0-c79148610361"/>
+        <COMPID name="Côte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>

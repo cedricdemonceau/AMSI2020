@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Obstacle" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Carte" version="4">
   <OBJECT>
-    <ID name="Obstacle" mc="Standard.Class" uid="12ca24bc-884b-4614-b3a2-d396141f5f58"/>
+    <ID name="Carte" mc="Standard.Class" uid="b96948ef-a71d-426a-a014-35826d2cea9c"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
       <ATT name="IsElementary">false</ATT>
-      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Obstacle]]></ATT>
+      <ATT name="Name"><![CDATA[Carte]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="f382a53e-feb5-4dea-90de-7223889c886a"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="52b8a83e-f666-453d-af29-569ecba3dd76"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
@@ -25,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Cases" mc="Standard.Class" uid="88db6810-6431-404f-8b0e-0952a3e928a7"/>
+              <ID name="Orientation" mc="Standard.Class" uid="e8a003c1-3a85-42a4-bd19-0a14e9e4bff7"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
