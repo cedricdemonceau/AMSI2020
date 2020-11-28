@@ -31,7 +31,7 @@
               <OBJECT>
                 <ID name="Note" mc="Infrastructure.Note" uid="e1b32a0d-76ec-46b3-aaea-0dabd040b0d6"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
+                  <ATT name="Content"><![CDATA[{Disjoint, Incomplet}]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"><![CDATA[Note]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

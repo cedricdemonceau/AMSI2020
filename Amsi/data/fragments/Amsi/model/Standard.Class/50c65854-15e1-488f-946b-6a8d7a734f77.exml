@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Primitif" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypePrimitif" version="4">
   <OBJECT>
-    <ID name="Primitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
+    <ID name="TypePrimitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
       <ATT name="IsElementary">false</ATT>
-      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Primitif]]></ATT>
+      <ATT name="Name"><![CDATA[TypePrimitif]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="a5e479ab-0b82-4f9f-9175-57970879867f"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="78a7d202-b055-42db-abe2-cd0657670fcc"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
