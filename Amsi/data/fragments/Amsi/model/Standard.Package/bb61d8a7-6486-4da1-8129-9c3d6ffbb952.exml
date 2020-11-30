@@ -4480,6 +4480,10 @@
         <COMPID name="Radar" mc="Standard.Class" uid="f9a57b46-8ff2-4147-abbb-2e006f797b85"/>
         <COMPID name="Cape" mc="Standard.Class" uid="78cad424-595e-4fb2-8ac0-c79148610361"/>
         <COMPID name="Côte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
+        <COMPID name="Class" mc="Standard.Class" uid="d0164192-e58b-4677-8c71-192195a494db"/>
+        <COMPID name="Bottes pare-feu" mc="Standard.Class" uid="e946cc00-91ff-4bac-a71a-7e5d06d5f662"/>
+        <COMPID name="Bottes à crampon" mc="Standard.Class" uid="b8cc52b6-b98a-4112-b69c-74d0926f4b89"/>
+        <COMPID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>

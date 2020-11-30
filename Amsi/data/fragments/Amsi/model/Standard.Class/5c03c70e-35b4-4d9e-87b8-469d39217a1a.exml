@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Radar" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Kit de plongée" version="4">
   <OBJECT>
-    <ID name="Radar" mc="Standard.Class" uid="f9a57b46-8ff2-4147-abbb-2e006f797b85"/>
+    <ID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Radar]]></ATT>
+      <ATT name="Name"><![CDATA[Kit de plongée]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="3fe44021-ac61-4d9d-ac8c-bcc223ee7083"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="ff0ce80b-35ba-40fc-af76-714496aba4f2"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
@@ -25,11 +25,11 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Orientation" mc="Standard.Class" uid="e8a003c1-3a85-42a4-bd19-0a14e9e4bff7"/>
+              <ID name="Aide" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="Note" mc="Infrastructure.Note" uid="4fd1763e-e6e8-48bf-adc0-e63055cd978b"/>
+                <ID name="Note" mc="Infrastructure.Note" uid="f23e2260-c044-4276-8cc3-830f14c0c546"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
