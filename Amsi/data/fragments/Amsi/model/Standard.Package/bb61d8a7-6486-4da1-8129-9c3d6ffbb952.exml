@@ -4484,6 +4484,8 @@
         <COMPID name="Bottes pare-feu" mc="Standard.Class" uid="e946cc00-91ff-4bac-a71a-7e5d06d5f662"/>
         <COMPID name="Bottes à crampon" mc="Standard.Class" uid="b8cc52b6-b98a-4112-b69c-74d0926f4b89"/>
         <COMPID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
+        <COMPID name="Programme" mc="Standard.Class" uid="bc85378a-dee8-436f-8332-bf4daa9ad922"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="4e22ffc8-eb28-494c-8798-84900d4ee771"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
@@ -4491,7 +4493,7 @@
         <COMPID name="Q 4.7" mc="Standard.ClassDiagram" uid="c91ae7e5-2e7d-420a-b263-dba242bfdb39"/>
         <COMPID name="Q 4.6" mc="Standard.ObjectDiagram" uid="e063bb9c-b8bf-4431-b4ee-b47f754fc129"/>
         <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
-        <COMPID name="Q 4.9" mc="Standard.ClassDiagram" uid="0a0a4141-8e5f-4822-b25d-f42cde16dc24"/>
+        <COMPID name="Q 4.9" mc="Standard.ClassDiagram" uid="38a915f6-d104-4fef-9161-806f1b83e9b1"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
