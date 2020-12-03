@@ -4486,6 +4486,14 @@
         <COMPID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
         <COMPID name="Programme" mc="Standard.Class" uid="bc85378a-dee8-436f-8332-bf4daa9ad922"/>
         <COMPID name="Déclaration" mc="Standard.Class" uid="4e22ffc8-eb28-494c-8798-84900d4ee771"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="d44bce2e-5080-43ca-bd91-b772d02c9f3a"/>
+        <COMPID name="Module" mc="Standard.Class" uid="82e14bbe-a244-4ac5-9de8-fb8e4ca6e0a0"/>
+        <COMPID name="Type" mc="Standard.Class" uid="5658f159-0b89-4a66-9048-9e137e1b984b"/>
+        <COMPID name="Paramètres" mc="Standard.Class" uid="8bd73d6c-bd3a-42e0-b3cb-00dbf09ad62e"/>
+        <COMPID name="Stratégie" mc="Standard.Class" uid="ffb5e7ab-4573-412c-990f-70277c12a0ab"/>
+        <COMPID name="Stratégie" mc="Standard.Class" uid="1bb22e0f-a878-4716-9250-1e834ba804b6"/>
+        <COMPID name="Vision court terme" mc="Standard.Class" uid="3a267cf4-31af-4aa9-9cf5-9e26afa64173"/>
+        <COMPID name="Vision long terme" mc="Standard.Class" uid="e9da7ce4-fd4d-49a5-a98d-00a7dbab8931"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
@@ -4494,6 +4502,7 @@
         <COMPID name="Q 4.6" mc="Standard.ObjectDiagram" uid="e063bb9c-b8bf-4431-b4ee-b47f754fc129"/>
         <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
         <COMPID name="Q 4.9" mc="Standard.ClassDiagram" uid="38a915f6-d104-4fef-9161-806f1b83e9b1"/>
+        <COMPID name="Q 4.10" mc="Standard.ClassDiagram" uid="243565e3-717e-4600-afb9-50b750719fa9"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
