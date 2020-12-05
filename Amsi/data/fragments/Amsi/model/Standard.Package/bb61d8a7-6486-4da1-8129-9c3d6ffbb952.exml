@@ -3745,7 +3745,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Base">
                     <REFOBJ>
-                      <ID name="Position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
+                      <ID name="position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -3919,7 +3919,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Base">
                     <REFOBJ>
-                      <ID name="Position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
+                      <ID name="position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -3982,7 +3982,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Base">
                     <REFOBJ>
-                      <ID name="Position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
+                      <ID name="position" mc="Standard.Attribute" uid="8b942b62-4631-4b5b-a867-5627580d7100"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -4494,6 +4494,46 @@
         <COMPID name="Stratégie" mc="Standard.Class" uid="1bb22e0f-a878-4716-9250-1e834ba804b6"/>
         <COMPID name="Vision court terme" mc="Standard.Class" uid="3a267cf4-31af-4aa9-9cf5-9e26afa64173"/>
         <COMPID name="Vision long terme" mc="Standard.Class" uid="e9da7ce4-fd4d-49a5-a98d-00a7dbab8931"/>
+        <COMPID name="Objectif" mc="Standard.Class" uid="7d53927b-7b34-413e-a9c9-a1ff15fe7c51"/>
+        <COMPID name="Neant" mc="Standard.Class" uid="3cf20fe2-a591-4fbe-be82-a8268341e485"/>
+        <COMPID name="AllerVers" mc="Standard.Class" uid="3142bcf3-5593-49ed-85b3-26960a02a47e"/>
+        <COMPID name="Contourner" mc="Standard.Class" uid="03dcc956-8088-4d21-808a-5b6c0050c225"/>
+        <COMPID name="Eviter" mc="Standard.Class" uid="05bebc04-5228-4dda-817b-253940f9eb2d"/>
+        <COMPID name="CollecterMax" mc="Standard.Class" uid="80b43e1b-2a4d-46aa-9ff9-63cc72f5ff22"/>
+        <COMPID name="Combattre" mc="Standard.Class" uid="256985e8-b698-46ca-ad6f-28df4426de30"/>
+        <COMPID name="Action" mc="Standard.Class" uid="777f035d-69fa-4184-a191-2c2b2605f9a5"/>
+        <COMPID name="Personnage" mc="Standard.Class" uid="321a881c-ee36-4180-aaa6-e196a9963400"/>
+        <COMPID name="SeDéplacer" mc="Standard.Class" uid="2abeb734-66bd-4a4e-936b-82a9561fceb8"/>
+        <COMPID name="UtiliserItem" mc="Standard.Class" uid="1dca008d-a546-49b4-a772-eb77da1e5dc8"/>
+        <COMPID name="Revêtir" mc="Standard.Class" uid="d13a35b0-add3-45a6-8d76-4d3582e371b4"/>
+        <COMPID name="Frapper" mc="Standard.Class" uid="348dc9cd-f39c-47c6-9233-9bab1cbd9b98"/>
+        <COMPID name="Tirer" mc="Standard.Class" uid="ce11ccf1-13fe-4079-a2e6-7523abf67c90"/>
+        <COMPID name="ConsulterRadar" mc="Standard.Class" uid="dd193b29-5dd5-429a-9d5b-601dbbe628ba"/>
+        <COMPID name="Expression" mc="Standard.Class" uid="a381e2e8-f74d-4ffd-9e37-f6e81312cda9"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="6969bb0f-618f-41da-8471-9018fb47e152"/>
+        <COMPID name="Expression" mc="Standard.Class" uid="d55be23f-e625-475a-b5cf-60b933fbb845"/>
+        <COMPID name="Parenthèse" mc="Standard.Class" uid="4afceb49-8b95-49d4-bdac-8c14119a7215"/>
+        <COMPID name="Literal" mc="Standard.Class" uid="9c01a062-0818-401e-b2da-9f01a3afaf94"/>
+        <COMPID name="ExpressionGauche" mc="Standard.Class" uid="e42adfb9-cd6a-402a-a301-338d6a21ef22"/>
+        <COMPID name="Unaire" mc="Standard.Class" uid="6476eda7-38f8-482f-9651-aca9378bc401"/>
+        <COMPID name="Binaire" mc="Standard.Class" uid="56d84aee-444c-40c4-9d83-c0345757bccd"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="c4918369-aea6-4b31-9084-6eedf375be13"/>
+        <COMPID name="AppelVariable" mc="Standard.Class" uid="0d527cba-c90b-473f-855b-01bd64b93ee3"/>
+        <COMPID name="AppelModule" mc="Standard.Class" uid="b05aa341-5f7e-4bc1-8e89-fde79c9e8f59"/>
+        <COMPID name="Paramètre" mc="Standard.Class" uid="8cd44ea8-9707-44de-b722-112adcf29218"/>
+        <COMPID name="AppelCellule" mc="Standard.Class" uid="a1fb80ab-dc06-4ddc-a0dd-bdafd4b3c63b"/>
+        <COMPID name="AppelChamp" mc="Standard.Class" uid="d92a85c5-17ec-47e8-a168-084013915c92"/>
+        <COMPID name="Tableau" mc="Standard.Class" uid="da8d3d58-f413-4aea-8e8f-f64c689ad106"/>
+        <COMPID name="Enregistrement" mc="Standard.Class" uid="7980d69f-031e-4bdf-bbc3-4f2f2402e144"/>
+        <COMPID name="Instruction" mc="Standard.Class" uid="107d2921-98e0-4f3f-9e01-65e0fcd93e09"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="45392460-6e9a-4cb1-8b30-1d66371f0fa9"/>
+        <COMPID name="Instruction" mc="Standard.Class" uid="31a4c729-60fe-4967-adc3-9a673884b77f"/>
+        <COMPID name="Skip" mc="Standard.Class" uid="05a888a8-8cf0-4106-a144-c3651b20de67"/>
+        <COMPID name="Conditionnelle" mc="Standard.Class" uid="63ddbce1-6d13-4a2f-a93b-567ad10cca26"/>
+        <COMPID name="Itération" mc="Standard.Class" uid="eb2ef048-4e6a-43e1-bdd2-1d303dddc9f9"/>
+        <COMPID name="Affectation" mc="Standard.Class" uid="524527bd-fe2c-48db-ba7b-14b14f7d2e3c"/>
+        <COMPID name="Action" mc="Standard.Class" uid="5357bea9-9247-4403-a541-d3065de25bb9"/>
+        <COMPID name="Class1" mc="Standard.Class" uid="c1eeb476-d1cc-4f6a-b510-b0a941a5fb59"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
@@ -4503,6 +4543,9 @@
         <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
         <COMPID name="Q 4.9" mc="Standard.ClassDiagram" uid="38a915f6-d104-4fef-9161-806f1b83e9b1"/>
         <COMPID name="Q 4.10" mc="Standard.ClassDiagram" uid="243565e3-717e-4600-afb9-50b750719fa9"/>
+        <COMPID name="Q 4.11" mc="Standard.ClassDiagram" uid="92822faf-d151-40f2-8d4a-dfef4a107b7a"/>
+        <COMPID name="Q 4.12" mc="Standard.ClassDiagram" uid="3ee9b833-7bdd-4139-9249-42810ab54fbd"/>
+        <COMPID name="Q 4.13" mc="Standard.ClassDiagram" uid="c9b2627c-cf77-45fe-b004-b24c665524f2"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
