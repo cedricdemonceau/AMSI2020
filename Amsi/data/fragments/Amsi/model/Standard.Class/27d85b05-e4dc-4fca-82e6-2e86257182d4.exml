@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Class1" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Littéral" version="4">
   <OBJECT>
-    <ID name="Class1" mc="Standard.Class" uid="c1eeb476-d1cc-4f6a-b510-b0a941a5fb59"/>
+    <ID name="Littéral" mc="Standard.Class" uid="27d85b05-e4dc-4fca-82e6-2e86257182d4"/>
     <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Class1]]></ATT>
+      <ATT name="Name"><![CDATA[Littéral]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>

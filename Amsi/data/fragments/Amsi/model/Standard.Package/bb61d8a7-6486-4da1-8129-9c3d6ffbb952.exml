@@ -4533,7 +4533,9 @@
         <COMPID name="Itération" mc="Standard.Class" uid="eb2ef048-4e6a-43e1-bdd2-1d303dddc9f9"/>
         <COMPID name="Affectation" mc="Standard.Class" uid="524527bd-fe2c-48db-ba7b-14b14f7d2e3c"/>
         <COMPID name="Action" mc="Standard.Class" uid="5357bea9-9247-4403-a541-d3065de25bb9"/>
-        <COMPID name="Class1" mc="Standard.Class" uid="c1eeb476-d1cc-4f6a-b510-b0a941a5fb59"/>
+        <COMPID name="Littéral" mc="Standard.Class" uid="27d85b05-e4dc-4fca-82e6-2e86257182d4"/>
+        <COMPID name="Combinable" mc="Standard.Class" uid="fb581587-2c39-44e0-8306-9e4d6de38359"/>
+        <COMPID name="Activable" mc="Standard.Class" uid="e47fcfa3-5a45-4a31-aae4-8d230bb87ca2"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>

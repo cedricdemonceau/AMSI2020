@@ -25,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Aide" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
+              <ID name="Activable" mc="Standard.Class" uid="e47fcfa3-5a45-4a31-aae4-8d230bb87ca2"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
