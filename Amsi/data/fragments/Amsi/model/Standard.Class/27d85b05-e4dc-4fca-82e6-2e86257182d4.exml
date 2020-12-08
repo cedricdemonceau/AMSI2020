@@ -15,6 +15,32 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="nom" mc="Standard.Attribute" uid="17b1f9a9-bf38-40bf-ad08-0ea295bcacc8"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[nom]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="9192f9de-542a-407d-86ef-3922c0b7d14e"/>
@@ -58,9 +84,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="est" mc="Standard.Association" uid="0dd38092-f77b-4e10-96c8-451bb88a3ad5"/>
+                      <ID name="possède" mc="Standard.Association" uid="0dd38092-f77b-4e10-96c8-451bb88a3ad5"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[est]]></ATT>
+                        <ATT name="Name"><![CDATA[possède]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -70,7 +96,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="est" mc="Standard.Association" uid="0dd38092-f77b-4e10-96c8-451bb88a3ad5"/>
+              <COMPID name="possède" mc="Standard.Association" uid="0dd38092-f77b-4e10-96c8-451bb88a3ad5"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
