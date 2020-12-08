@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Bottes pare-feu" version="4">
   <OBJECT>
     <ID name="Bottes pare-feu" mc="Standard.Class" uid="e946cc00-91ff-4bac-a71a-7e5d06d5f662"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Côte de maille" version="4">
   <OBJECT>
     <ID name="Côte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

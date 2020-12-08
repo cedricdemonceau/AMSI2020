@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Conditionnelle" version="4">
   <OBJECT>
     <ID name="Conditionnelle" mc="Standard.Class" uid="63ddbce1-6d13-4a2f-a93b-567ad10cca26"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.13 Instructions" mc="Standard.Package" uid="f5b4961d-8c7b-4702-a5a0-7d95b760b6c5"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -53,6 +53,22 @@
             <LINK relation="SuperType">
               <ID name="Instruction" mc="Standard.Class" uid="31a4c729-60fe-4967-adc3-9a673884b77f"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="78dda808-1bca-492b-a75d-141a459ea837"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

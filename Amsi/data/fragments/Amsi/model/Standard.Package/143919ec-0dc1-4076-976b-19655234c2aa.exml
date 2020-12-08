@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme de classe minimal" version="4">
+  <OBJECT>
+    <ID name="Diagramme de classe minimal" mc="Standard.Package" uid="143919ec-0dc1-4076-976b-19655234c2aa"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramme de classe minimal]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Jeu" mc="Standard.Class" uid="e73571a4-2f6e-439c-ac17-55635f5dce48"/>
+        <COMPID name="Joueurs" mc="Standard.Class" uid="d1dfe4a0-7361-4047-a27d-421a4d4ef2c1"/>
+        <COMPID name="Avatar" mc="Standard.Class" uid="1cc5d05e-f3cb-43f8-84aa-fecf432fb916"/>
+        <COMPID name="match" mc="Standard.Class" uid="8534c215-fe1b-41be-97a1-4b2b966861df"/>
+        <COMPID name="rencontre" mc="Standard.Class" uid="511355ea-4965-43b3-b0cf-8e87f4d9af55"/>
+        <COMPID name="Monde" mc="Standard.Class" uid="6c9656d7-5693-4227-abe1-20f620979819"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.1" mc="Standard.ClassDiagram" uid="8f876042-6a84-4e07-a350-bf63d6d6b8fe"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

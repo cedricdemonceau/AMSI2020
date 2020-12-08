@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Monde" version="4">
   <OBJECT>
     <ID name="Monde" mc="Standard.Class" uid="8b499c65-cc42-4930-a9e4-7a0f895934d8"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="Taille x" mc="Standard.Attribute" uid="8ece5e42-19b1-4b5f-91c2-3b3223585484"/>
+          <ID name="tailleX" mc="Standard.Attribute" uid="8ece5e42-19b1-4b5f-91c2-3b3223585484"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -31,7 +31,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Taille x]]></ATT>
+            <ATT name="Name"><![CDATA[tailleX]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -41,7 +41,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Taille y" mc="Standard.Attribute" uid="6b3f6015-4344-4288-ac3c-83b94cea8970"/>
+          <ID name="tailleY" mc="Standard.Attribute" uid="6b3f6015-4344-4288-ac3c-83b94cea8970"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -55,7 +55,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Taille y]]></ATT>
+            <ATT name="Name"><![CDATA[tailleY]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -66,8 +66,14 @@
         </OBJECT>
       </COMP>
       <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="838ddc67-e0ee-4713-9d3a-38ce7c944345"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="aaf938d6-33d7-4e5b-8de0-0aa529780e30"/>
+        </REFOBJ>
         <OBJECT>
-          <ID name="possède" mc="Standard.AssociationEnd" uid="838ddc67-e0ee-4713-9d3a-38ce7c944345"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="67732d26-94d5-4fbd-b22e-67b9e4adc563"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -75,21 +81,18 @@
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[possède]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="Cases" mc="Standard.Class" uid="88db6810-6431-404f-8b0e-0952a3e928a7"/>
-            </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="1397547e-e9f3-4d4a-8309-cb47db59ac9a"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="84bd63c1-d01c-4973-ac43-dbc3145c3075"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -107,13 +110,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="possède" mc="Standard.AssociationEnd" uid="838ddc67-e0ee-4713-9d3a-38ce7c944345"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="67732d26-94d5-4fbd-b22e-67b9e4adc563"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="383cd957-80ea-4402-b01b-0ea0e49497d4"/>
+                      <ID name="a lieu" mc="Standard.Association" uid="f62ac7cf-ebde-4aee-ad98-e0d2f90b801a"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA[a lieu]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -123,12 +126,12 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="383cd957-80ea-4402-b01b-0ea0e49497d4"/>
+              <COMPID name="a lieu" mc="Standard.Association" uid="f62ac7cf-ebde-4aee-ad98-e0d2f90b801a"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Possède" mc="Standard.AssociationEnd" uid="aaf938d6-33d7-4e5b-8de0-0aa529780e30"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="278ec344-ffbe-4cf9-9f47-f7a996964e25"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -141,18 +144,15 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Possède]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="Graal" mc="Standard.Class" uid="9e46ebe6-9772-4fb1-bbc7-61c96672cf50"/>
-            </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="9908eed6-c27b-4e77-95a4-7c2aa943b9d9"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="147998c9-b0bb-4f23-9def-309609b2323d"/>
                 <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="Aggregation">KindIsComposition</ATT>
                   <ATT name="IsChangeable">true</ATT>
                   <ATT name="Changeable">ReadWrite</ATT>
                   <ATT name="IsDerived">false</ATT>
@@ -168,13 +168,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="Possède" mc="Standard.AssociationEnd" uid="aaf938d6-33d7-4e5b-8de0-0aa529780e30"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="278ec344-ffbe-4cf9-9f47-f7a996964e25"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="2192781f-414d-4f4a-a080-6b3faf1d4f81"/>
+                      <ID name="possède" mc="Standard.Association" uid="af308953-eb8d-47af-ae43-d073c55453f7"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA[possède]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -184,7 +184,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="2192781f-414d-4f4a-a080-6b3faf1d4f81"/>
+              <COMPID name="possède" mc="Standard.Association" uid="af308953-eb8d-47af-ae43-d073c55453f7"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.12 Expressions" version="4">
+  <OBJECT>
+    <ID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.12 Expressions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Déclaration" mc="Standard.Class" uid="6969bb0f-618f-41da-8471-9018fb47e152"/>
+        <COMPID name="Expression" mc="Standard.Class" uid="d55be23f-e625-475a-b5cf-60b933fbb845"/>
+        <COMPID name="Parenthèse" mc="Standard.Class" uid="4afceb49-8b95-49d4-bdac-8c14119a7215"/>
+        <COMPID name="Literal" mc="Standard.Class" uid="9c01a062-0818-401e-b2da-9f01a3afaf94"/>
+        <COMPID name="ExpressionGauche" mc="Standard.Class" uid="e42adfb9-cd6a-402a-a301-338d6a21ef22"/>
+        <COMPID name="Unaire" mc="Standard.Class" uid="6476eda7-38f8-482f-9651-aca9378bc401"/>
+        <COMPID name="Binaire" mc="Standard.Class" uid="56d84aee-444c-40c4-9d83-c0345757bccd"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="c4918369-aea6-4b31-9084-6eedf375be13"/>
+        <COMPID name="AppelVariable" mc="Standard.Class" uid="0d527cba-c90b-473f-855b-01bd64b93ee3"/>
+        <COMPID name="AppelModule" mc="Standard.Class" uid="b05aa341-5f7e-4bc1-8e89-fde79c9e8f59"/>
+        <COMPID name="Paramètre" mc="Standard.Class" uid="8cd44ea8-9707-44de-b722-112adcf29218"/>
+        <COMPID name="AppelCellule" mc="Standard.Class" uid="a1fb80ab-dc06-4ddc-a0dd-bdafd4b3c63b"/>
+        <COMPID name="AppelChamp" mc="Standard.Class" uid="d92a85c5-17ec-47e8-a168-084013915c92"/>
+        <COMPID name="Tableau" mc="Standard.Class" uid="da8d3d58-f413-4aea-8e8f-f64c689ad106"/>
+        <COMPID name="Enregistrement" mc="Standard.Class" uid="7980d69f-031e-4bdf-bbc3-4f2f2402e144"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.12" mc="Standard.ClassDiagram" uid="3ee9b833-7bdd-4139-9249-42810ab54fbd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

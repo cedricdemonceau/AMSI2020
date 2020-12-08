@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Frapper" version="4">
   <OBJECT>
     <ID name="Frapper" mc="Standard.Class" uid="348dc9cd-f39c-47c6-9233-9bab1cbd9b98"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.11 Action" mc="Standard.Package" uid="596e01ab-0011-475d-92a6-5f71e8269187"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

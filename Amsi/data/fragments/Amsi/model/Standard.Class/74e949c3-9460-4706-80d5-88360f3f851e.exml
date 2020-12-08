@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Réel" version="4">
   <OBJECT>
     <ID name="Réel" mc="Standard.Class" uid="74e949c3-9460-4706-80d5-88360f3f851e"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.8 Type" mc="Standard.Package" uid="02a7735e-f740-4031-b857-f9c4c66bd3ea"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -25,8 +25,24 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Primitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
+              <ID name="TypePrimitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="eee7db08-4f18-4d95-bc6c-4eaca46bec45"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

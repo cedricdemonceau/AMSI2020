@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Champ" version="4">
   <OBJECT>
     <ID name="Champ" mc="Standard.Class" uid="9eeb09ed-200f-43ee-b670-c51c72a2991f"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.8 Type" mc="Standard.Package" uid="02a7735e-f740-4031-b857-f9c4c66bd3ea"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

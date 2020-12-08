@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Variable" version="4">
   <OBJECT>
     <ID name="Variable" mc="Standard.Class" uid="d44bce2e-5080-43ca-bd91-b772d02c9f3a"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.9 Déclaration" mc="Standard.Package" uid="6f405f6e-ec97-4681-97b8-d6437154ea2b"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -16,8 +16,11 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="1293c6d9-2d99-4853-a4fa-2a60c6dceb6f"/>
+        </REFOBJ>
         <OBJECT>
-          <ID name="type" mc="Standard.AssociationEnd" uid="1293c6d9-2d99-4853-a4fa-2a60c6dceb6f"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="10f341ac-cd01-4c1f-b933-59307752cfaf"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -25,21 +28,18 @@
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[type]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="Type" mc="Standard.Class" uid="5658f159-0b89-4a66-9048-9e137e1b984b"/>
-            </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="9f8f7320-82e5-4596-855d-3427f06ec334"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="8de0a29d-73ee-4f08-b652-ced92f0b3a43"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -48,7 +48,7 @@
                   <ATT name="IsOrdered">false</ATT>
                   <ATT name="IsUnique">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
@@ -57,13 +57,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="type" mc="Standard.AssociationEnd" uid="1293c6d9-2d99-4853-a4fa-2a60c6dceb6f"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="10f341ac-cd01-4c1f-b933-59307752cfaf"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="d438a997-2e30-44aa-91ba-6c492ae92a94"/>
+                      <ID name="comporte" mc="Standard.Association" uid="7e66d6b2-1196-4463-8468-9e401ad97913"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA[comporte]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -73,7 +73,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="d438a997-2e30-44aa-91ba-6c492ae92a94"/>
+              <COMPID name="comporte" mc="Standard.Association" uid="7e66d6b2-1196-4463-8468-9e401ad97913"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

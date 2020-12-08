@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Module" version="4">
   <OBJECT>
     <ID name="Module" mc="Standard.Class" uid="06e93022-a12f-4672-9273-8b64c72fa5eb"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.7 Stratégie" mc="Standard.Package" uid="b71e4030-f32b-4961-bbda-af6a3ed39783"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -27,6 +27,23 @@
             <LINK relation="SuperType">
               <ID name="Déclaration" mc="Standard.Class" uid="93077a25-facf-4a99-951c-c8714ecbd295"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="4707b224-c31a-42f0-b9e5-7785a6e078da"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[{Disjoint, Complet}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

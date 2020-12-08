@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.9 Déclaration" version="4">
+  <OBJECT>
+    <ID name="Q 4.9 Déclaration" mc="Standard.Package" uid="6f405f6e-ec97-4681-97b8-d6437154ea2b"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.9 Déclaration]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Programme" mc="Standard.Class" uid="bc85378a-dee8-436f-8332-bf4daa9ad922"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="4e22ffc8-eb28-494c-8798-84900d4ee771"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="d44bce2e-5080-43ca-bd91-b772d02c9f3a"/>
+        <COMPID name="Module" mc="Standard.Class" uid="82e14bbe-a244-4ac5-9de8-fb8e4ca6e0a0"/>
+        <COMPID name="Type" mc="Standard.Class" uid="5658f159-0b89-4a66-9048-9e137e1b984b"/>
+        <COMPID name="Paramètres" mc="Standard.Class" uid="8bd73d6c-bd3a-42e0-b3cb-00dbf09ad62e"/>
+        <COMPID name="Stratégie" mc="Standard.Class" uid="ffb5e7ab-4573-412c-990f-70277c12a0ab"/>
+        <COMPID name="Expression" mc="Standard.Class" uid="a381e2e8-f74d-4ffd-9e37-f6e81312cda9"/>
+        <COMPID name="Instruction" mc="Standard.Class" uid="107d2921-98e0-4f3f-9e01-65e0fcd93e09"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.9" mc="Standard.ClassDiagram" uid="38a915f6-d104-4fef-9161-806f1b83e9b1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

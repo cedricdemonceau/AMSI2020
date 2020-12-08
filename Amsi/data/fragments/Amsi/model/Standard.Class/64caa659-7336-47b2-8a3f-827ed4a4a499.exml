@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Vision court terme" version="4">
   <OBJECT>
     <ID name="Vision court terme" mc="Standard.Class" uid="64caa659-7336-47b2-8a3f-827ed4a4a499"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.7 Stratégie" mc="Standard.Package" uid="b71e4030-f32b-4961-bbda-af6a3ed39783"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -16,8 +16,11 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="0fb01721-bbcd-4804-b11b-62b19d3391ac"/>
+        </REFOBJ>
         <OBJECT>
-          <ID name="objectif" mc="Standard.AssociationEnd" uid="0fb01721-bbcd-4804-b11b-62b19d3391ac"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="78716c75-b169-4856-bf82-b83bb9865097"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -26,22 +29,19 @@
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[objectif]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="Objectif" mc="Standard.Class" uid="48a0749f-6442-42b6-9694-1c668c4cb546"/>
-            </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="612b1850-35a1-42d6-a98f-39725552a574"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="ac1326cd-6f26-4a46-92be-c1e42d76c5c4"/>
                 <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="Aggregation">KindIsComposition</ATT>
                   <ATT name="IsChangeable">true</ATT>
                   <ATT name="Changeable">ReadWrite</ATT>
                   <ATT name="IsDerived">false</ATT>
@@ -57,13 +57,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="objectif" mc="Standard.AssociationEnd" uid="0fb01721-bbcd-4804-b11b-62b19d3391ac"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="78716c75-b169-4856-bf82-b83bb9865097"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="6c02fa4d-227d-4fcb-839c-29c66876008a"/>
+                      <ID name="composé" mc="Standard.Association" uid="5befb2a1-1f99-4db0-98ee-0d4c30b47cda"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA[composé]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -73,7 +73,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="6c02fa4d-227d-4fcb-839c-29c66876008a"/>
+              <COMPID name="composé" mc="Standard.Association" uid="5befb2a1-1f99-4db0-98ee-0d4c30b47cda"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

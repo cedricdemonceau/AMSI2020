@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SeDéplacer" version="4">
   <OBJECT>
     <ID name="SeDéplacer" mc="Standard.Class" uid="2abeb734-66bd-4a4e-936b-82a9561fceb8"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.11 Action" mc="Standard.Package" uid="596e01ab-0011-475d-92a6-5f71e8269187"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

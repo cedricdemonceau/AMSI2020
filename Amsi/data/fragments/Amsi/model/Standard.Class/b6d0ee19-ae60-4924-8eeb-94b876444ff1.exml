@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Variable" version="4">
   <OBJECT>
     <ID name="Variable" mc="Standard.Class" uid="b6d0ee19-ae60-4924-8eeb-94b876444ff1"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.7 Stratégie" mc="Standard.Package" uid="b71e4030-f32b-4961-bbda-af6a3ed39783"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

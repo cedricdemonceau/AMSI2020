@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Booléen" version="4">
   <OBJECT>
     <ID name="Booléen" mc="Standard.Class" uid="0fc08f08-ccd6-4058-9c6d-c4a15ecaa4c1"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.8 Type" mc="Standard.Package" uid="02a7735e-f740-4031-b857-f9c4c66bd3ea"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -25,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Primitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
+              <ID name="TypePrimitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.13 Instructions" version="4">
+  <OBJECT>
+    <ID name="Q 4.13 Instructions" mc="Standard.Package" uid="f5b4961d-8c7b-4702-a5a0-7d95b760b6c5"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.13 Instructions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Déclaration" mc="Standard.Class" uid="45392460-6e9a-4cb1-8b30-1d66371f0fa9"/>
+        <COMPID name="Instruction" mc="Standard.Class" uid="31a4c729-60fe-4967-adc3-9a673884b77f"/>
+        <COMPID name="Skip" mc="Standard.Class" uid="05a888a8-8cf0-4106-a144-c3651b20de67"/>
+        <COMPID name="Conditionnelle" mc="Standard.Class" uid="63ddbce1-6d13-4a2f-a93b-567ad10cca26"/>
+        <COMPID name="Itération" mc="Standard.Class" uid="eb2ef048-4e6a-43e1-bdd2-1d303dddc9f9"/>
+        <COMPID name="Affectation" mc="Standard.Class" uid="524527bd-fe2c-48db-ba7b-14b14f7d2e3c"/>
+        <COMPID name="Action" mc="Standard.Class" uid="5357bea9-9247-4403-a541-d3065de25bb9"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.13" mc="Standard.ClassDiagram" uid="c9b2627c-cf77-45fe-b004-b24c665524f2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

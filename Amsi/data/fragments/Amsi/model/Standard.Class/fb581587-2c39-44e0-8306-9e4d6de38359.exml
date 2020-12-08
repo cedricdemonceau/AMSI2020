@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Combinable" version="4">
   <OBJECT>
     <ID name="Combinable" mc="Standard.Class" uid="fb581587-2c39-44e0-8306-9e4d6de38359"/>
-    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <PID name="Q 4.10 Objectifs" mc="Standard.Package" uid="067fb6fc-1299-4532-a37e-ebf4ae556672"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

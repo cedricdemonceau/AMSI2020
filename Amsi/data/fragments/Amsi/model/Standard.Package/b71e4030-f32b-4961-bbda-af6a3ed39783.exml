@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.7 Stratégie" version="4">
+  <OBJECT>
+    <ID name="Q 4.7 Stratégie" mc="Standard.Package" uid="b71e4030-f32b-4961-bbda-af6a3ed39783"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.7 Stratégie]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Stratégie" mc="Standard.Class" uid="b1926bc1-9851-48d7-b064-0ac4514eafec"/>
+        <COMPID name="Déclaration" mc="Standard.Class" uid="93077a25-facf-4a99-951c-c8714ecbd295"/>
+        <COMPID name="Module" mc="Standard.Class" uid="06e93022-a12f-4672-9273-8b64c72fa5eb"/>
+        <COMPID name="Variable" mc="Standard.Class" uid="b6d0ee19-ae60-4924-8eeb-94b876444ff1"/>
+        <COMPID name="Vision court terme" mc="Standard.Class" uid="64caa659-7336-47b2-8a3f-827ed4a4a499"/>
+        <COMPID name="Vision long terme" mc="Standard.Class" uid="c9dfa1e4-2f70-4a56-a3ab-e75e4c3044c6"/>
+        <COMPID name="Règle" mc="Standard.Class" uid="7c6c4f47-f1b0-4eb7-9942-c15037b34f42"/>
+        <COMPID name="Objectif" mc="Standard.Class" uid="48a0749f-6442-42b6-9694-1c668c4cb546"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.7" mc="Standard.ClassDiagram" uid="c91ae7e5-2e7d-420a-b263-dba242bfdb39"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.11 Action" version="4">
+  <OBJECT>
+    <ID name="Q 4.11 Action" mc="Standard.Package" uid="596e01ab-0011-475d-92a6-5f71e8269187"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.11 Action]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Action" mc="Standard.Class" uid="777f035d-69fa-4184-a191-2c2b2605f9a5"/>
+        <COMPID name="Personnage" mc="Standard.Class" uid="321a881c-ee36-4180-aaa6-e196a9963400"/>
+        <COMPID name="SeDéplacer" mc="Standard.Class" uid="2abeb734-66bd-4a4e-936b-82a9561fceb8"/>
+        <COMPID name="UtiliserItem" mc="Standard.Class" uid="1dca008d-a546-49b4-a772-eb77da1e5dc8"/>
+        <COMPID name="Revêtir" mc="Standard.Class" uid="d13a35b0-add3-45a6-8d76-4d3582e371b4"/>
+        <COMPID name="Frapper" mc="Standard.Class" uid="348dc9cd-f39c-47c6-9233-9bab1cbd9b98"/>
+        <COMPID name="Tirer" mc="Standard.Class" uid="ce11ccf1-13fe-4079-a2e6-7523abf67c90"/>
+        <COMPID name="ConsulterRadar" mc="Standard.Class" uid="dd193b29-5dd5-429a-9d5b-601dbbe628ba"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.11" mc="Standard.ClassDiagram" uid="92822faf-d151-40f2-8d4a-dfef4a107b7a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

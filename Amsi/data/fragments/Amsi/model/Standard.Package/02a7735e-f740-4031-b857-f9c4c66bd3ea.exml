@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Q 4.8 Type" version="4">
+  <OBJECT>
+    <ID name="Q 4.8 Type" mc="Standard.Package" uid="02a7735e-f740-4031-b857-f9c4c66bd3ea"/>
+    <PID name="amsi" mc="Standard.Package" uid="bb61d8a7-6486-4da1-8129-9c3d6ffbb952"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Q 4.8 Type]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Type" mc="Standard.Class" uid="f369dfb4-9db1-4253-b492-4e562d53be1f"/>
+        <COMPID name="TypePrimitif" mc="Standard.Class" uid="50c65854-15e1-488f-946b-6a8d7a734f77"/>
+        <COMPID name="String" mc="Standard.Class" uid="1053b1c2-3800-464a-b6c1-571fad125fc6"/>
+        <COMPID name="Réel" mc="Standard.Class" uid="74e949c3-9460-4706-80d5-88360f3f851e"/>
+        <COMPID name="Entier" mc="Standard.Class" uid="3d663c49-e770-4c3c-9f0f-b7ab0fe3516c"/>
+        <COMPID name="Booléen" mc="Standard.Class" uid="0fc08f08-ccd6-4058-9c6d-c4a15ecaa4c1"/>
+        <COMPID name="Enumération" mc="Standard.Class" uid="95cc5928-0ec2-4584-b08e-62ca63e1ecef"/>
+        <COMPID name="Tableau" mc="Standard.Class" uid="56b72aca-b750-4c05-bb4c-03e8f9c37c36"/>
+        <COMPID name="Enregistrement" mc="Standard.Class" uid="e3db5e53-41f9-45be-a61c-2539c44922b5"/>
+        <COMPID name="Champ" mc="Standard.Class" uid="9eeb09ed-200f-43ee-b670-c51c72a2991f"/>
+        <COMPID name="Littéral" mc="Standard.Class" uid="27d85b05-e4dc-4fca-82e6-2e86257182d4"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
