@@ -28,6 +28,7 @@
         <COMPID name="Règle" mc="Standard.Class" uid="f185e60e-455c-49ca-8393-9399fbb8f396"/>
         <COMPID name="Normales" mc="Standard.Class" uid="dc46007d-2a2f-4599-8e3a-0a4f9b57639a"/>
         <COMPID name="Métarègles" mc="Standard.Class" uid="f9c2f6c1-7926-40d7-bc43-6660a92e3214"/>
+        <COMPID name="Réaction" mc="Standard.Class" uid="8c7cdce0-ae62-4c6c-933b-982cc3c82a70"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.10" mc="Standard.ClassDiagram" uid="243565e3-717e-4600-afb9-50b750719fa9"/>
