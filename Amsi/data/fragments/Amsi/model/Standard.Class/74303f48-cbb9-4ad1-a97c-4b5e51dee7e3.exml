@@ -103,9 +103,6 @@
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="3797c40a-73d3-48a2-8cb6-96e3c201006e"/>
         </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="9c95ebb4-5270-4622-8f4b-90bc832526ba"/>
-        </REFOBJ>
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="a490e37c-4837-4a0c-9ab2-050623728655"/>
           <ATTRIBUTES>

@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Item" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Opérateur" version="4">
   <OBJECT>
-    <ID name="Item" mc="Standard.Class" uid="067549a5-a0ae-4a4d-bb42-7d7b95d0a58f"/>
-    <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
+    <ID name="Opérateur" mc="Standard.Class" uid="d193c2ff-c741-4414-b330-7755a403f6a1"/>
+    <PID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Item]]></ATT>
+      <ATT name="Name"><![CDATA[Opérateur]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="typeItem" mc="Standard.Attribute" uid="c730c3c9-1296-4397-8672-d412bd45c39f"/>
+          <ID name="opérateur" mc="Standard.Attribute" uid="cfe6e62f-9b50-4543-a703-7751000bc58c"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -31,27 +31,12 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[typeItem]]></ATT>
+            <ATT name="Name"><![CDATA[opérateur]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="Objet" mc="Standard.Class" uid="f51bdbab-dc6c-4676-ba72-849aaa79f303"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
-      <COMP relation="Parent">
-        <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="bdd290dd-474b-4a8e-973d-661ebf6b1254"/>
-          <ATTRIBUTES>
-            <ATT name="Discriminator"></ATT>
-            <ATT name="Name"><![CDATA[Generalization]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SuperType">
-              <ID name="Cases" mc="Standard.Class" uid="88db6810-6431-404f-8b0e-0952a3e928a7"/>
+              <ID name="Type" mc="Standard.Class" uid="f369dfb4-9db1-4253-b492-4e562d53be1f"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

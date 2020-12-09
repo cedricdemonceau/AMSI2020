@@ -25,6 +25,9 @@
         <COMPID name="CollecterMax" mc="Standard.Class" uid="80b43e1b-2a4d-46aa-9ff9-63cc72f5ff22"/>
         <COMPID name="Combattre" mc="Standard.Class" uid="256985e8-b698-46ca-ad6f-28df4426de30"/>
         <COMPID name="Combinable" mc="Standard.Class" uid="fb581587-2c39-44e0-8306-9e4d6de38359"/>
+        <COMPID name="Règle" mc="Standard.Class" uid="f185e60e-455c-49ca-8393-9399fbb8f396"/>
+        <COMPID name="Normales" mc="Standard.Class" uid="dc46007d-2a2f-4599-8e3a-0a4f9b57639a"/>
+        <COMPID name="Métarègles" mc="Standard.Class" uid="f9c2f6c1-7926-40d7-bc43-6660a92e3214"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.10" mc="Standard.ClassDiagram" uid="243565e3-717e-4600-afb9-50b750719fa9"/>

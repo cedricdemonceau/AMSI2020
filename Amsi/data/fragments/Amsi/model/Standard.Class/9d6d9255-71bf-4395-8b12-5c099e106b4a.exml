@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Aide" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="BonusDefense" version="4">
   <OBJECT>
-    <ID name="Aide" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
+    <ID name="BonusDefense" mc="Standard.Class" uid="9d6d9255-71bf-4395-8b12-5c099e106b4a"/>
     <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
       <ATT name="IsElementary">false</ATT>
-      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Aide]]></ATT>
+      <ATT name="Name"><![CDATA[BonusDefense]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="74ab3373-6395-46fd-b25f-9d3b3a750cc8"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="7bf7cd61-9325-431a-b680-9a0d8719c4d8"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
@@ -25,11 +25,11 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Objet" mc="Standard.Class" uid="f51bdbab-dc6c-4676-ba72-849aaa79f303"/>
+              <ID name="Bonus" mc="Standard.Class" uid="caa8fb7d-d64b-4c69-aafd-2408777443a4"/>
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="Note" mc="Infrastructure.Note" uid="d0c50d1c-cf8b-4c1b-8914-853586746fcc"/>
+                <ID name="Note" mc="Infrastructure.Note" uid="071d5d97-b700-48e3-8589-0ab429460f0e"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[{Disjoint, Complet}]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>

@@ -29,6 +29,7 @@
         <COMPID name="AppelChamp" mc="Standard.Class" uid="d92a85c5-17ec-47e8-a168-084013915c92"/>
         <COMPID name="Tableau" mc="Standard.Class" uid="da8d3d58-f413-4aea-8e8f-f64c689ad106"/>
         <COMPID name="Enregistrement" mc="Standard.Class" uid="7980d69f-031e-4bdf-bbc3-4f2f2402e144"/>
+        <COMPID name="Opérateur" mc="Standard.Class" uid="d193c2ff-c741-4414-b330-7755a403f6a1"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.12" mc="Standard.ClassDiagram" uid="3ee9b833-7bdd-4139-9249-42810ab54fbd"/>

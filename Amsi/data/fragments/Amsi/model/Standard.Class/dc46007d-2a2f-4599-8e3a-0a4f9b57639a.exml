@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Unaire" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Normales" version="4">
   <OBJECT>
-    <ID name="Unaire" mc="Standard.Class" uid="6476eda7-38f8-482f-9651-aca9378bc401"/>
-    <PID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
+    <ID name="Normales" mc="Standard.Class" uid="dc46007d-2a2f-4599-8e3a-0a4f9b57639a"/>
+    <PID name="Q 4.10 Objectifs" mc="Standard.Package" uid="067fb6fc-1299-4532-a37e-ebf4ae556672"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -11,21 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Unaire]]></ATT>
+      <ATT name="Name"><![CDATA[Normales]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="OwnedEnd">
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="0dd49661-3578-41a8-af4c-fa5019bb20f3"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="353b52cb-9928-47d0-9686-165e9e30dd21"/>
-        </REFOBJ>
-      </COMP>
       <COMP relation="Parent">
         <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="fb17047c-9818-4ba7-a843-881c7e42156e"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="176cc181-97cd-4f27-8e8b-e818e275ca17"/>
           <ATTRIBUTES>
             <ATT name="Discriminator"></ATT>
             <ATT name="Name"><![CDATA[Generalization]]></ATT>
@@ -33,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Expression" mc="Standard.Class" uid="d55be23f-e625-475a-b5cf-60b933fbb845"/>
+              <ID name="Règle" mc="Standard.Class" uid="f185e60e-455c-49ca-8393-9399fbb8f396"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

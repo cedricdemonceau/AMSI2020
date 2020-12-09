@@ -61,9 +61,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="sousExpression" mc="Standard.Association" uid="2c3b6354-8031-402a-8e38-db0717bd471e"/>
+                      <ID name="est" mc="Standard.Association" uid="2c3b6354-8031-402a-8e38-db0717bd471e"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[sousExpression]]></ATT>
+                        <ATT name="Name"><![CDATA[est]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -73,7 +73,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="sousExpression" mc="Standard.Association" uid="2c3b6354-8031-402a-8e38-db0717bd471e"/>
+              <COMPID name="est" mc="Standard.Association" uid="2c3b6354-8031-402a-8e38-db0717bd471e"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -97,7 +97,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="893c4e2c-6364-4dc4-8339-fdab5a6e4752"/>
+                <ID name="leftHandSide" mc="Standard.AssociationEnd" uid="893c4e2c-6364-4dc4-8339-fdab5a6e4752"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -110,7 +110,7 @@
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[leftHandSide]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -119,9 +119,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="leftHandSide" mc="Standard.Association" uid="b14b301f-2c31-41d5-8134-309cea4bfee6"/>
+                      <ID name="est" mc="Standard.Association" uid="b14b301f-2c31-41d5-8134-309cea4bfee6"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[leftHandSide]]></ATT>
+                        <ATT name="Name"><![CDATA[est]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -131,7 +131,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="leftHandSide" mc="Standard.Association" uid="b14b301f-2c31-41d5-8134-309cea4bfee6"/>
+              <COMPID name="est" mc="Standard.Association" uid="b14b301f-2c31-41d5-8134-309cea4bfee6"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -155,7 +155,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="c824b5e3-238b-4c97-842a-10e5d0c43fd0"/>
+                <ID name="rightHandSide" mc="Standard.AssociationEnd" uid="c824b5e3-238b-4c97-842a-10e5d0c43fd0"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -168,7 +168,7 @@
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[rightHandSide]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -177,9 +177,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="rightHandSide" mc="Standard.Association" uid="cfd1d648-97be-45a9-9b7c-79a259eb9f4e"/>
+                      <ID name="est" mc="Standard.Association" uid="cfd1d648-97be-45a9-9b7c-79a259eb9f4e"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[rightHandSide]]></ATT>
+                        <ATT name="Name"><![CDATA[est]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -189,7 +189,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="rightHandSide" mc="Standard.Association" uid="cfd1d648-97be-45a9-9b7c-79a259eb9f4e"/>
+              <COMPID name="est" mc="Standard.Association" uid="cfd1d648-97be-45a9-9b7c-79a259eb9f4e"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

@@ -217,110 +217,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Type Item" mc="Standard.Enumeration" uid="d237f6b8-3986-4abc-927c-fa3349f8ffc6"/>
-          <ATTRIBUTES>
-            <ATT name="IsElementary">true</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="IsLeaf">false</ATT>
-            <ATT name="IsRoot">false</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="Name"><![CDATA[Type Item]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Value">
-              <OBJECT>
-                <ID name="Boisson" mc="Standard.EnumerationLiteral" uid="61170526-cfcf-4313-80dc-7a8df0daff26"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Boisson]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Nourriture" mc="Standard.EnumerationLiteral" uid="70b2e85d-67f1-4092-a758-f8669f07610e"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Nourriture]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Munition" mc="Standard.EnumerationLiteral" uid="189cf804-7db3-490c-bf4e-d040559b19d7"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Munition]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Bottes pare-feu" mc="Standard.EnumerationLiteral" uid="dc694bbc-343e-41c9-9d05-b1860140095e"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Bottes pare-feu]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Bottes à crampons" mc="Standard.EnumerationLiteral" uid="f3165634-eac2-4ab2-8d6b-416d47c91061"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Bottes à crampons]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Kit de plongée" mc="Standard.EnumerationLiteral" uid="4cfe0780-877e-4309-b9d5-c08f0c6f82bf"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Kit de plongée]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Bonus" mc="Standard.EnumerationLiteral" uid="79da19c3-c1af-4f41-b73e-fe77356219b6"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Bonus]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Radar" mc="Standard.EnumerationLiteral" uid="a9e8c7b7-3967-4980-933b-c5e81b26a961"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Radar]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Carte" mc="Standard.EnumerationLiteral" uid="9cf3a443-e9d6-4f58-9069-fff785f8b40d"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Carte]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Cotte de maille" mc="Standard.EnumerationLiteral" uid="4261563e-c144-4b68-9b2c-24e0beca20c7"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Cotte de maille]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Cape de mage" mc="Standard.EnumerationLiteral" uid="3aff48a8-e1b9-4de1-b7d7-db25ee194018"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Cape de mage]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Mode de jeu" mc="Standard.Enumeration" uid="fd74a32f-f4c3-4610-bd19-904ea760ea7d"/>
           <ATTRIBUTES>
             <ATT name="IsElementary">true</ATT>
@@ -450,6 +346,9 @@
         <COMPID name="Bottes pare-feu" mc="Standard.Class" uid="e946cc00-91ff-4bac-a71a-7e5d06d5f662"/>
         <COMPID name="Bottes à crampon" mc="Standard.Class" uid="b8cc52b6-b98a-4112-b69c-74d0926f4b89"/>
         <COMPID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
+        <COMPID name="BonusAttaque" mc="Standard.Class" uid="06361505-a00e-4410-aa3d-0cc3d2fb722b"/>
+        <COMPID name="BonusDefense" mc="Standard.Class" uid="9d6d9255-71bf-4395-8b12-5c099e106b4a"/>
+        <COMPID name="Bonus" mc="Standard.Class" uid="caa8fb7d-d64b-4c69-aafd-2408777443a4"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.2" mc="Standard.ClassDiagram" uid="890fc346-828e-435a-92b2-42591751c949"/>
