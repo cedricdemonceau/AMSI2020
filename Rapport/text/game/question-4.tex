@@ -21,7 +21,7 @@ context Personnage inv ratios :
 	self.ratioAttaque > 0 and < 1
 		and
 			if self.oclIsTypeOf(Avatar)
-				then self.ratioDéfense > 0 and < 1
+				then self.ratioDefense > 0 and < 1
 			endif
 \end{lstlisting}
 
@@ -39,9 +39,9 @@ context Match inv ordoné :
 	self.rencontre.allInstances -> asOrderedSet()
 \end{lstlisting}
 
-La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe \ref{fig:Jeu}.
+La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe par l'héritage d'\emph{Objet} \ref{fig:Jeu}.
 
-La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe \ref{fig:Jeu}.
+La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe par l'association possède entre \emph{Monde} et \emph{Graal} \ref{fig:Jeu}.
 
 La contrainte du fait que les cases ne peuvent exéder la longueur d'un monde est la suivante:
 

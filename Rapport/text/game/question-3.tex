@@ -36,5 +36,5 @@ La contrainte Ocl obligeant les rencontres à avoir un numéro d'ordre unique es
 \begin{lstlisting}[caption=Contrainte sur le numéro d'ordre unique,captionpos=b,label={lst:numUnique},language=OCL]
 context Match inv ordre :
     self.rencontres.allInstances -> forall( r1,r2 |
-        r1.numéroOrdre <> r2.numéroOrdre implies r1 <> r2)
+        r1.numeroOrdre <> r2.numeroOrdre implies r1 <> r2)
 \end{lstlisting}

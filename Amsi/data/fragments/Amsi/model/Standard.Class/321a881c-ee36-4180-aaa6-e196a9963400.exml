@@ -94,6 +94,22 @@
           <ID name="" mc="Standard.AssociationEnd" uid="1ed6e6d6-846a-4bda-9232-67150a22b4d2"/>
         </REFOBJ>
       </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="2b83403f-dd7c-4e8f-bb0b-c8ae9d2a5267"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Classe Personnage du diagramme de classe amélioré Q 4.2]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>
