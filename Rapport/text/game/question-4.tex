@@ -58,5 +58,6 @@ Le fait que le joueur se trouve dans la case correspondant à sa position absolu
 context Avatar inv posAbsolue :
 	self.rencontre.monde.case.allInstances -> forall ( c1,c2 |
 		self.position.x = c1.position.x and self.position.y = c1.position.y implies
-		)
+		self.position.x <> c2.position.x and self.position.y <> c2.position.y)
 \end{lstlisting}
+
