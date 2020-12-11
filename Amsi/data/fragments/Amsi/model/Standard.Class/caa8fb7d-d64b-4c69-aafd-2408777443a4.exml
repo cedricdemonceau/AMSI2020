@@ -51,7 +51,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Objet" mc="Standard.Class" uid="f51bdbab-dc6c-4676-ba72-849aaa79f303"/>
+              <ID name="Aide" mc="Standard.Class" uid="c8b5b4b7-269a-4079-bb62-549e82aa346f"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

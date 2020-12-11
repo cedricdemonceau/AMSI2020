@@ -8,36 +8,26 @@
 
 Dans cette version du diagramme de classe \ref{fig:Jeu}, la classe Jeu est est maintenant associée a deux nouvelles classes.
 
-La classe \emph{ProfilUtilisateur}, qui sauvegarde le profil de chaque utilisateur et qui est elle même associée a \emph{HistoriqueDeNiveau} d'une part
-et d'autre part à \emph{Lesson}, par la classe d'association \emph{Reussite}, qui donne le nombre de lessons réussies.
-Et la classe \emph{Editeur} qui permet d'éditer un \emph{Niveau} à la fois. 
+La classe \emph{Position}, qui possède deux attributs positionX et positionY qui va conserver la position de chaque objet présent pendant le Jeu.
 
-Cette classe \emph{Editeur} est en assiciation avec \emph{ElementNiveau}
-car il est possible d'éditer un niveau (et donc d'avoir besoins des éléments pour construire un niveau) sans avoir de lessons et de niveau existants.
+La classe \emph{Personnage}, qui représente les personnages (avatar ou zombie) avec leurs points de vie, leur ratio d'attaque et leurs effets et leur position. Cette classe à deux sous-classes :
+\emph{Zombie} et \emph{Avatar}.
 
-\emph{ProfilUtilisateur} est aussi associé à niveau car il faut pouvoir conserver les niveaux édités par l'utilisateur et à \emph{NiveauEnCours} car il
-faut pouvoir conserver les données de performances de chaque niveau. 
+\emph{Avatar} comporte maintenant des aspects normaux et payants, une portée de visibilité, un ratio de défense et un nom. Cette classe est liée à \emph{Détail} qui va garder le détail des matchs et des
+opposants rencontrés lors de ceux-ci. Elle est également liée à \emph{Stratégie} qui va contenir la stratégie à appliquer et.
 
-La composition se trouvant entre \emph{Niveau} et \emph{NiveauEnCours} est présente
-car il faut un \emph{Niveau} pour avoir un \emph{NiveauEnCours}. La classe \emph{NiveauEnCours} est associée via la classe d'association \emph{PositionJoueur}
-à \emph{Joueur} car étant donné que Cody peut se déplacer sur le niveau, il faut pourvoir connaître sa position via \emph{getElementAtPosition}.
+\emph{Avatar} est aussi liée à \emph{Rencontre} vu qu'il est utilisé lors de celles-ci. Il possède un \emph{Inventaire}
 
-La classe \emph{Niveau} est quand à elle associée par une assiciation 1-1 à \emph{Joueur} et \emph{Coffre} car il ne peut y avoir qu'un seul joueur et un
-seul coffre par \emph{Niveau}. 
+\emph{Joueurs} est maintenant une classe abstraite contenant un pseudo et si il à payé pour des aspects suplémentaires. Ses deux sous-classes sont \emph{Physique} qui représente un joueur physique et 
+\emph{Machine} qui représente une machine avec un niveau de difficulté.
 
-Elle est aussi associée à \emph{ElementNiveau} qui possède 4 enfants directs (\emph{Surface},
-\emph{Personnage},\emph{Obstacle} et \emph{Teleporteur}).
+L'\emph{Avatar} possède également un \emph{Inventaire} qui est composé d'une opération permettant d'ajouter un item à celui-ci. Cet \emph{Inventaire} possède dont des \emph{Objet}. Ces Objets peuvent être de 4
+sous-classes. La première sous-classe \emph{Ramassable} qui peut-être \emph{Nourriture}, \emph{Boisson} et \emph{Munition}. La seconde sous-classe \emph{Orientation} qui peut être \emph{Carte} ou \emph{Radar}.
+La troisième sous-classe \emph{Aide} Qui peut être un \emph{Activable} \emph{Cape} ou \emph{Cotte de maille}, Ou peut être \emph{Bottes pare-feu} \emph{Bottes à crampons} ou \emph{Kit de plongée}. La quatrième
+sous-classe \emph{Bonus} qui peut être un \emph{BonusAttaque} ou \emph{BonusDefense}.
 
-\emph{Surface} a comme enfants (\emph{Sol},\emph{Pont} et \emph{Coffre}), \emph{Personnage} a (\emph{Joueur} et \emph{Ennemi}) et \emph{Teleporteur} a
-(\emph{Tunnel} et \emph{Levier}). 
-
-Pour la classe \emph{Sol}, le changement de \emph{décors} se fait via une énumération \emph{Theme}. 
-
-Dans la classe \emph{Ennemi}, le boolean \emph{reaction} permet d'avoir des ennemis agressifs ou non. La classe \emph{Tunnel} est en double association sur elle même car il y a une entrée et une
-sortie. 
-
-Dans le cas contraire , la variable\emph{isOpen} est a false et il n'y a qu'un tunnel fermé. Un \emph{Tunnel} lorsqu'il est double ( une entrée et une sortie)
-est en assiciation 1-1 avec un \emph{Levier} qui permet de l'ouvrir.
+Au niveau de la classe \emph{Monde}, elle possède maintenant des \emph{Cases}, chacune d'entre elles sont en bas ou en haut d'une autre. A gauche ou a droite d'une autre. Chaque \emph{Cases} peut être vide ou
+alors un \emph{Obstacle}, un \emph{Item} ou le \emph{Graal}. Si elle est un \emph{Obstacle}, celui-ci peut être une \emph{Zone} un \emph{Franchissable} ou un \emph{Infranchissable}.
 
 
 \begin{sidewaysfigure}

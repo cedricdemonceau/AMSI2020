@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Côte de maille" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Cotte de maille" version="4">
   <OBJECT>
-    <ID name="Côte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
+    <ID name="Cotte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
     <PID name="Diagramme de classe amélioré" mc="Standard.Package" uid="df7b9432-3b51-4fee-aba6-256e7b641f6e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Côte de maille]]></ATT>
+      <ATT name="Name"><![CDATA[Cotte de maille]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

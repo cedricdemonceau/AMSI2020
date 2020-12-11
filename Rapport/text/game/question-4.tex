@@ -2,19 +2,53 @@
 %%
 
 %% ==============================
-\subsection{Diagramme d'objet d'un niveau}
+\subsection{\textsc{Ocl} - Contraintes OCL du diagramme de classe}
 \label{sec:question-4}
 %% ==============================
 
-La propriété du jeu qui n'est pas satisfaite par ce niveau est celle de l'accesibilité du coffre par le joueur. En effet dans ce niveau, il n'est pas possible au joueur d'atteindre le coffre.
 
-Le diagramme d'objet suivant décrit le niveau à la figure 3:
+Le fait que le potentiel de vie d'un joueur est toujours positif est caractérisé par la contrainte suivante:
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=350pt]{assets/Diagramme_objet}
-	\caption{Diagramme d'objet de la figure 4.4}
-	\label{fig:diagrammeobjet}
-\end{figure}
+\begin{lstlisting}[caption=Contrainte sur lpotentiel de vie,captionpos=b,label={lst:vie},language=OCL]
+context Personnage inv vie :
+	self.potentielDeVie > 0
+\end{lstlisting}
 
-\newpage
+La contrainte exprimant le fait que les ratios d'attaque s'exprime comme suit:
+
+\begin{lstlisting}[caption=Contrainte sur les ratios,captionpos=b,label={lst:ratios},language=OCL]
+context Personnage inv ratios :
+	self.ratioAttaque > 0 and < 1
+		and
+			if self.oclIsTypeOf(Avatar)
+				then self.ratioDéfense > 0 and < 1
+			endif
+\end{lstlisting}
+
+La contrainte sur l'imparité des rencontres est caractérisée comme suit:
+
+\begin{lstlisting}[caption=Contrainte sur l'imparité des rencontres,captionpos=b,label={lst:impair},language=OCL]
+context Match inv nbRencontre :
+	self.rencontre.size() % 2 = 1
+\end{lstlisting}
+
+La contrainte exprimant que le numéro identifiant la rencontre correspond à son ordre de jeu est la suivante:
+
+\begin{lstlisting}[caption=Contrainte sur l'ordre des rencontres,captionpos=b,label={lst:ordreRencontres},language=OCL]
+context Match inv ordoné :
+	self.rencontre.allInstances -> asOrderedSet()
+\end{lstlisting}
+
+La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe \ref{fig:Jeu}.
+
+La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe \ref{fig:Jeu}.
+
+La contrainte du fait que les cases ne peuvent exéder la longueur d'un monde est la suivante:
+
+\begin{lstlisting}
+context Monde inv posCases :
+	self.case.positionX >= 0 and
+	self.case.positionY >= 0 and
+	self.case.positionX < self.tailleX and
+	self.case.
+\end{lstlisting}

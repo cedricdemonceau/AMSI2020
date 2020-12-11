@@ -85,6 +85,30 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="Aspect payant 1" mc="Standard.EnumerationLiteral" uid="de6bdfde-0c20-451b-8457-95916580e688"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Aspect payant 1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Aspect payant 2" mc="Standard.EnumerationLiteral" uid="46340163-ee15-4c7e-a0a2-bd10c55f09b4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Aspect payant 2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="..." mc="Standard.EnumerationLiteral" uid="050cb620-28c3-4282-83da-64d74feeeb18"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[...]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -169,46 +193,6 @@
                 <ID name="Menhir" mc="Standard.EnumerationLiteral" uid="bbfe6198-4071-4165-9df5-87af71ea6041"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Menhir]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Aspects Payants" mc="Standard.Enumeration" uid="ea034409-cc3f-47b3-9b19-7993210433da"/>
-          <ATTRIBUTES>
-            <ATT name="IsElementary">true</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="IsLeaf">false</ATT>
-            <ATT name="IsRoot">false</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="Name"><![CDATA[Aspects Payants]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Value">
-              <OBJECT>
-                <ID name="Payant 1" mc="Standard.EnumerationLiteral" uid="008ffdad-e426-4b4d-bf40-487ee0dcdc89"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Payant 1]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Payant 2" mc="Standard.EnumerationLiteral" uid="4eb5d1e5-8340-4925-a45e-ed550e9a664c"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Payant 2]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Payant 3" mc="Standard.EnumerationLiteral" uid="dfcd248e-3f45-4388-9a1a-27983dd04566"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Payant 3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -342,9 +326,9 @@
         <COMPID name="Carte" mc="Standard.Class" uid="b96948ef-a71d-426a-a014-35826d2cea9c"/>
         <COMPID name="Radar" mc="Standard.Class" uid="f9a57b46-8ff2-4147-abbb-2e006f797b85"/>
         <COMPID name="Cape" mc="Standard.Class" uid="78cad424-595e-4fb2-8ac0-c79148610361"/>
-        <COMPID name="Côte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
+        <COMPID name="Cotte de maille" mc="Standard.Class" uid="0cf9e7cc-7d25-4b1f-8433-9f9c40e5fd6b"/>
         <COMPID name="Bottes pare-feu" mc="Standard.Class" uid="e946cc00-91ff-4bac-a71a-7e5d06d5f662"/>
-        <COMPID name="Bottes à crampon" mc="Standard.Class" uid="b8cc52b6-b98a-4112-b69c-74d0926f4b89"/>
+        <COMPID name="Bottes à crampons" mc="Standard.Class" uid="b8cc52b6-b98a-4112-b69c-74d0926f4b89"/>
         <COMPID name="Kit de plongée" mc="Standard.Class" uid="5c03c70e-35b4-4d9e-87b8-469d39217a1a"/>
         <COMPID name="BonusAttaque" mc="Standard.Class" uid="06361505-a00e-4410-aa3d-0cc3d2fb722b"/>
         <COMPID name="BonusDefense" mc="Standard.Class" uid="9d6d9255-71bf-4395-8b12-5c099e106b4a"/>
