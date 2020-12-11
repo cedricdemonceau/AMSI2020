@@ -2,15 +2,18 @@
 %%
 
 %% ==============================
-\subsection{Raffinement du concept d'Expression}
+\subsection{Modélisation explicite d'un objectif}
 \label{sec:question9}
 %% ==============================
 
-Le concept d'expression est présenté à l'aide de la figure \ref{fig:expression}. Une \emph{Expression} étant elle aussi enfant de \emph{Déclaration} qui était présenté à la figure \ref{fig:declaration}.
+Le concept d'objectif est présenté à l'aide de la figure \ref{fig:objectif}. Un \emph{Objectif} est parent de 4 enfants : \emph{Neant} qui est l'objectif par défault. \emph{Combinable} qui est lui même parent de \emph{AllerVers}, \emph{Contourner} et \emph{Eviter}.
+\emph{CollecterMax} et \emph{Combattre} sont les deux derniers enfants.
+
+Les \emph{Objectif} sont réalisés par des \emph{Regle} qui possède des \emph{Reaction}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=500pt]{assets/class__Expression}
-	\caption{Diagramme de classe d'une expression}
-	\label{fig:expression}
+	\includegraphics[width=500pt]{assets/class__Objectif}
+	\caption{Diagramme de classe d'un objectif}
+	\label{fig:objectif}
 \end{figure}

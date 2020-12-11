@@ -2,19 +2,17 @@
 %%
 
 %% ==============================
-\subsection{Raffinement du concept d'Instruction}
+\subsection{Modélisation du concept de déclaration}
 \label{sec:question9}
 %% ==============================
 
-Présenté à la figure \ref{fig:instruction}, le raffinement d'\emph{Instruction} montre qu'une \emph{Instruction} possède trois enfants direct (\emph{Composée}, \emph{Affectation} et \emph{AppelProcédure}).
+Présenté à la figure \ref{fig:declaration}, la modélisation d'une \emph{Declaration} montre que celle-ci est comportée dans une \emph{Stratégie} et à 5 enfants : \emph{Variable}, \emph{Instruction}, \emph{Expression}, \emph{Module} et \emph{Paramètres}.
 
-Le diagramme montre aussi qu'une Instruction est enfant de \emph{Déclaration} (comme présenté dans la figure \ref{fig:declaration}). Cela permet d'éviter d'avoir des tableaux de \emph{Void}.
-
-Sur le diagramme, nous pouvons remarquer la classe \emph{Parametres}, celle-ci a été représentée dans la figure \ref{fig:declaration}.  
+Un \emph{Module} comporte des \emph{Variable} et ces deux-ci ont un \emph{Type}. Le \emph{Module} prend également des \emph{Paramètres}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=500pt]{assets/class__Instruction}
-	\caption{Diagramme de classe d'une instruction}
-	\label{fig:instruction}
+	\includegraphics[width=500pt]{assets/class__Declaration}
+	\caption{Diagramme de classe d'une déclaration}
+	\label{fig:declaration}
 \end{figure}

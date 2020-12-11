@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Règle" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Regle" version="4">
   <OBJECT>
-    <ID name="Règle" mc="Standard.Class" uid="f185e60e-455c-49ca-8393-9399fbb8f396"/>
+    <ID name="Regle" mc="Standard.Class" uid="f185e60e-455c-49ca-8393-9399fbb8f396"/>
     <PID name="Q 4.10 Objectifs" mc="Standard.Package" uid="067fb6fc-1299-4532-a37e-ebf4ae556672"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Règle]]></ATT>
+      <ATT name="Name"><![CDATA[Regle]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

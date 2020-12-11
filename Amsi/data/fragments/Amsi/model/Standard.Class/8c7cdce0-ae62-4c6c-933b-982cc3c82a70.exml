@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Réaction" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Reaction" version="4">
   <OBJECT>
-    <ID name="Réaction" mc="Standard.Class" uid="8c7cdce0-ae62-4c6c-933b-982cc3c82a70"/>
+    <ID name="Reaction" mc="Standard.Class" uid="8c7cdce0-ae62-4c6c-933b-982cc3c82a70"/>
     <PID name="Q 4.10 Objectifs" mc="Standard.Package" uid="067fb6fc-1299-4532-a37e-ebf4ae556672"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Réaction]]></ATT>
+      <ATT name="Name"><![CDATA[Reaction]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

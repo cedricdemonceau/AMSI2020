@@ -2,17 +2,19 @@
 %%
 
 %% ==============================
-\subsection{Modélisation du concept de déclaration}
+\subsection{Modélisation du concept de stratégie}
 \label{sec:question7}
 %% ==============================
 
-La classe \emph{Déclaration} (Figure \ref{fig:program}) est raffinée dans la figure \ref{fig:declaration}. Dans cette figure, nous avons conservé les classes \emph{Named} et \emph{Programme} afin de faciliter la lecture du diagramme.
+Voici un diagramme de classe qui fixe les éléments principaux d'une stratégie :
+
+Une \emph{Stratégie} est composé d'une \emph{vision court terme} et une \emph{vision long terme} qui sont toutes les deux articulées par des \emph{Objectif} eux même réalisés par des \emph{Règle}.
+
+Une \emph{Stratégie} comporte également des \emph{Déclaration} pouvant être des \emph{Module} ou des \emph{Variable}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=500pt]{assets/class__Declaration}
-	\caption{Diagramme de classe d'une déclaration}
-	\label{fig:declaration}
+	\includegraphics[width=500pt]{assets/strat_base}
+	\caption{Diagramme de classe d'une stratégie}
+	\label{fig:strategie}
 \end{figure}
-
-

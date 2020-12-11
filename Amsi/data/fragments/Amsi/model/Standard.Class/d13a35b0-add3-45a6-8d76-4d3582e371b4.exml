@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Revêtir" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Revetir" version="4">
   <OBJECT>
-    <ID name="Revêtir" mc="Standard.Class" uid="d13a35b0-add3-45a6-8d76-4d3582e371b4"/>
+    <ID name="Revetir" mc="Standard.Class" uid="d13a35b0-add3-45a6-8d76-4d3582e371b4"/>
     <PID name="Q 4.11 Action" mc="Standard.Package" uid="596e01ab-0011-475d-92a6-5f71e8269187"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Revêtir]]></ATT>
+      <ATT name="Name"><![CDATA[Revetir]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

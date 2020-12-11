@@ -2,15 +2,15 @@
 %%
 
 %% ==============================
-\subsection{\textsc{Ocl} - Contrainte permettant de vérifier qu'une déclaration est bien formée}
-\label{sec:question12}
+\subsection{Modélisation explicite d'une expression}
+\label{sec:question9}
 %% ==============================
 
-La contrainte de multiplicité (1..*) sur la liaison entre \emph{Enregistrement} et \emph{Primitif} (nommé \emph{possède} - Figure \ref{fig:instruction}) force à ce que la liste des champs d'un enregistrement ne soit pas vide.
+Le concept d'expression est présenté à l'aide de la figure \ref{fig:expression}. Une \emph{Expression} 
 
-Un tableau est toujours au minimum d'une dimension lors de l'initialisation d'une class \emph{Tableau}. La contrainte \textsc{Ocl} permettant d'avoir une longueur positive est ci-après (Listing \ref{lst:positive}).
-
-\begin{lstlisting}[caption={Dimension strictement positive},captionpos=b,label={lst:positive},language=OCL]
-context Tableau inv:
-	self.longueur >= 0
-\end{lstlisting}
+\begin{figure}
+	\centering
+	\includegraphics[width=500pt]{assets/class__Expression}
+	\caption{Diagramme de classe d'une expression}
+	\label{fig:expression}
+\end{figure}

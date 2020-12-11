@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Parenthèse" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Parenthese" version="4">
   <OBJECT>
-    <ID name="Parenthèse" mc="Standard.Class" uid="4afceb49-8b95-49d4-bdac-8c14119a7215"/>
+    <ID name="Parenthese" mc="Standard.Class" uid="4afceb49-8b95-49d4-bdac-8c14119a7215"/>
     <PID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Parenthèse]]></ATT>
+      <ATT name="Name"><![CDATA[Parenthese]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

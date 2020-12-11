@@ -25,6 +25,7 @@
         <COMPID name="Enregistrement" mc="Standard.Class" uid="e3db5e53-41f9-45be-a61c-2539c44922b5"/>
         <COMPID name="Champ" mc="Standard.Class" uid="9eeb09ed-200f-43ee-b670-c51c72a2991f"/>
         <COMPID name="Littéral" mc="Standard.Class" uid="27d85b05-e4dc-4fca-82e6-2e86257182d4"/>
+        <COMPID name="Void" mc="Standard.Class" uid="903630d3-ff9e-497c-a2bd-266689de0cac"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Q 4.8" mc="Standard.ClassDiagram" uid="dcb17df9-b1f0-47bb-bbc2-2a44fdd2261d"/>
