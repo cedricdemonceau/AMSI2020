@@ -18,10 +18,10 @@ La contrainte exprimant le fait que les ratios d'attaque s'exprime comme suit:
 
 \begin{lstlisting}[caption=Contrainte sur les ratios,captionpos=b,label={lst:ratios},language=OCL]
 context Personnage inv ratios :
-	self.ratioAttaque > 0 and < 1
+	self.ratioAttaque > 0 and self.ratioAttaque < 1
 		and
 			if self.oclIsTypeOf(Avatar)
-				then self.ratioDefense > 0 and < 1
+				then self.ratioDefense > 0 and self.ratioDefense < 1
 			endif
 \end{lstlisting}
 
@@ -47,8 +47,16 @@ La contrainte du fait que les cases ne peuvent exéder la longueur d'un monde es
 
 \begin{lstlisting}
 context Monde inv posCases :
-	self.case.positionX >= 0 and
-	self.case.positionY >= 0 and
-	self.case.positionX < self.tailleX and
-	self.case.
+	self.case.allInstances -> forall ( c |
+		c.position.x >= 0 and c.position.x < self.tailleX and
+		c.position.y >= 0 and c.position.y < self.tailleY)
+\end{lstlisting}
+
+Le fait que le joueur se trouve dans la case correspondant à sa position absolue est caractérisé par la contrainte suivante :
+
+\begin{lstlisting}
+context Avatar inv posAbsolue :
+	self.rencontre.monde.case.allInstances -> forall ( c1,c2 |
+		self.position.x = c1.position.x and self.position.y = c1.position.y implies
+		)
 \end{lstlisting}
