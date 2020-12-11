@@ -49,7 +49,7 @@
                   </COMP>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Se rendre vers le Graal" mc="Standard.Instance" uid="c5c1b0c2-f424-4759-8bc8-cbb9c3fbae58"/>
+                      <ID name="VisionLongTerme1" mc="Standard.Instance" uid="c5c1b0c2-f424-4759-8bc8-cbb9c3fbae58"/>
                     </REFOBJ>
                   </LINK>
                   <COMP relation="Opposite">
@@ -98,7 +98,7 @@
                   </COMP>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Rammasser un maximum de nourriture" mc="Standard.Instance" uid="244fa425-a7eb-45bc-9db0-ae8a50e6ed51"/>
+                      <ID name="VisionCourtTerme1" mc="Standard.Instance" uid="244fa425-a7eb-45bc-9db0-ae8a50e6ed51"/>
                     </REFOBJ>
                   </LINK>
                   <COMP relation="Opposite">
@@ -180,35 +180,69 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Se rendre vers le Graal" mc="Standard.Instance" uid="c5c1b0c2-f424-4759-8bc8-cbb9c3fbae58"/>
+          <ID name="VisionLongTerme1" mc="Standard.Instance" uid="c5c1b0c2-f424-4759-8bc8-cbb9c3fbae58"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Se rendre vers le Graal]]></ATT>
+            <ATT name="Name"><![CDATA[VisionLongTerme1]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
               <ID name="Vision long terme" mc="Standard.Class" uid="c9dfa1e4-2f70-4a56-a3ab-e75e4c3044c6"/>
             </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="" mc="Standard.AttributeLink" uid="b47babdd-f129-403d-ad02-a12bcb9d1090"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[se rendre vers le graal]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="vision" mc="Standard.Attribute" uid="de34ec36-13f8-4e5b-9e98-dd7fd6d47450"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Rammasser un maximum de nourriture" mc="Standard.Instance" uid="244fa425-a7eb-45bc-9db0-ae8a50e6ed51"/>
+          <ID name="VisionCourtTerme1" mc="Standard.Instance" uid="244fa425-a7eb-45bc-9db0-ae8a50e6ed51"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">true</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Rammasser un maximum de nourriture]]></ATT>
+            <ATT name="Name"><![CDATA[VisionCourtTerme1]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
               <ID name="Vision court terme" mc="Standard.Class" uid="64caa659-7336-47b2-8a3f-827ed4a4a499"/>
             </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="AttributeLink" mc="Standard.AttributeLink" uid="0d97f758-e23b-4ca0-8b42-fa561f953f06"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[ramasser le maximum de nourriture]]></ATT>
+                  <ATT name="Name"><![CDATA[AttributeLink]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="vision" mc="Standard.Attribute" uid="0550e8d6-fd33-4606-93bd-11fc52d948b3"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -364,6 +398,55 @@
                         </COMP>
                         <COMP relation="Opposite">
                           <COMPID name="affectation1" mc="Standard.LinkEnd" uid="82bf90d6-bc3d-4e19-b33b-56114fdbecc9"/>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="parametre1" mc="Standard.LinkEnd" uid="db8b7d0f-3730-47f6-b9a2-8d716a0440eb"/>
+                <ATTRIBUTES>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[parametre1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Link">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Link" uid="d3d06129-fac9-4fc0-9201-17af96a23fff"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="parametre1" mc="Standard.Instance" uid="ae092d53-7efb-48e1-bd1a-785cf5c47832"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="8eaa0c75-f689-452c-ace6-ac71c498f84d"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <COMPID name="" mc="Standard.Link" uid="d3d06129-fac9-4fc0-9201-17af96a23fff"/>
+                        </COMP>
+                        <COMP relation="Opposite">
+                          <COMPID name="parametre1" mc="Standard.LinkEnd" uid="db8b7d0f-3730-47f6-b9a2-8d716a0440eb"/>
                         </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
@@ -530,6 +613,54 @@
                   <LINK relation="Base">
                     <REFOBJ>
                       <ID name="rightHandSIde" mc="Standard.Attribute" uid="3c45d97f-8d73-4379-a2d8-04aad5dd2c08"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="parametre1" mc="Standard.Instance" uid="ae092d53-7efb-48e1-bd1a-785cf5c47832"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[parametre1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Paramètres" mc="Standard.Class" uid="8bd73d6c-bd3a-42e0-b3cb-00dbf09ad62e"/>
+            </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="AttributeLink" mc="Standard.AttributeLink" uid="2edfa290-cfee-4b3a-a236-24698148c0e5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[AttributeLink]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="id" mc="Standard.Attribute" uid="da5d88f6-a485-4515-a7fc-5a60ef156e0a"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="AttributeLink1" mc="Standard.AttributeLink" uid="75a889f1-67da-4236-8683-fbca3db7850d"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[case]]></ATT>
+                  <ATT name="Name"><![CDATA[AttributeLink1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="nom" mc="Standard.Attribute" uid="04cd2e4a-adbc-4c51-8c30-265eb34898b7"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
