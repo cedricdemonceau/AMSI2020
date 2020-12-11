@@ -24,6 +24,7 @@
         <COMPID name="Q 4.11 Action" mc="Standard.Package" uid="596e01ab-0011-475d-92a6-5f71e8269187"/>
         <COMPID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
         <COMPID name="Q 4.13 Instructions" mc="Standard.Package" uid="f5b4961d-8c7b-4702-a5a0-7d95b760b6c5"/>
+        <COMPID name="Diagramme Objet Stratégie" mc="Standard.Package" uid="f07b7d8e-b97e-4035-a0f6-ebab6b6b8f18"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
