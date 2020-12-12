@@ -5,9 +5,9 @@
 \contentsline {subsection}{\numberline {1.4}\textsc {Ocl} - Contraintes OCL du diagramme de classe}{5}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Lien entre les deux DSLS}{7}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Diagramme d'objet d'un monde}{7}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Description de Stratégie}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Modélisation du concept de stratégie}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Modélisation du concept de Type}{9}{subsection.2.2}%
+\contentsline {section}{\numberline {2}Description de Stratégie}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Modélisation du concept de stratégie}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Modélisation du concept de Type}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Modélisation du concept de déclaration}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Modélisation explicite d'un objectif}{10}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Modélisation explicite d'une action}{11}{subsection.2.5}%
