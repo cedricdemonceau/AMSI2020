@@ -35,7 +35,7 @@ context Match inv nbRencontre :
 La contrainte exprimant que le numéro identifiant la rencontre correspond à son ordre de jeu est la suivante:
 
 \begin{lstlisting}[caption=Contrainte sur l'ordre des rencontres,captionpos=b,label={lst:ordreRencontres},language=OCL]
-context Match inv ordoné :
+context Match inv ordone :
 	self.rencontre.allInstances -> asOrderedSet()
 \end{lstlisting}
 
@@ -60,8 +60,10 @@ Le fait que le joueur se trouve dans la case correspondant à sa position absolu
 \begin{lstlisting}[caption=Contrainte sur la position du joueur,captionpos=b,label={lst:posJoueur},language=OCL]
 context Avatar inv posAbsolue :
 	self.rencontre.monde.case.allInstances -> forall ( c1,c2 |
-		self.position.x = c1.position.x and self.position.y = c1.position.y implies
-		self.position.x <> c2.position.x and self.position.y <> c2.position.y)
+		self.position.x = c1.position.x and 
+		self.position.y = c1.position.y implies
+		self.position.x <> c2.position.x and 
+		self.position.y <> c2.position.y)
 \end{lstlisting}
 
 Le fait que la bordure d'un plateau contienne toujours des éléments infranchissables est caractérisé par la contrainte suivante :
@@ -69,10 +71,14 @@ Le fait que la bordure d'un plateau contienne toujours des éléments infranchis
 \begin{lstlisting}[caption=Contrainte sur la bordure du plateau,captionpos=b,label={lst:bordurePlat},language=OCL]
 context Monde inv Infranchissable :
 	self.case.allInstances -> forall(c |
-		(c.position.x = 0 and c.position.y <= 0 and c.position.y > self.tailleY or
-		c.position.x = self.tailleX - 1 and c.position.y <= 0 and c.position.y > self.tailleY or
-		c.position.y = 0 and c.position.x <= 0 and c.position.x > self.tailleX or
-		c.position.y = self.tailleY - 1 and c.position.x <= 0 and c.position.x > self.tailleX) implies
+		(c.position.x = 0 and c.position.y <= 0 and 
+		c.position.y > self.tailleY or
+		c.position.x = self.tailleX - 1 and 
+		c.position.y <= 0 and c.position.y > self.tailleY or
+		c.position.y = 0 and c.position.x <= 0 and 
+		c.position.x > self.tailleX or
+		c.position.y = self.tailleY - 1 and c.position.x <= 0 and
+		 c.position.x > self.tailleX) implies
 			self.case.oclIsTypeOf(Infranchissable)
 \end{lstlisting}
 
@@ -97,6 +103,7 @@ Le fait que 2 personnages ( zombie compris) ne puissent se trouver sur la même 
 \begin{lstlisting}
 context Personnage inv memeCase :
 	self.allInstances -> forall ( p1,p2 |
-		p1.position.x = p2.position.x and p1.position.y = p2.position.y implies
+		p1.position.x = p2.position.x and 
+		p1.position.y = p2.position.y implies
 		p1 = p2)
 \end{lstlisting}

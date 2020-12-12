@@ -36,19 +36,23 @@ La contrainte sur les variables locales est la suivante :
 
 \begin{lstlisting}[caption=Nom unique des variables locales,captionpos=b,label={lst:nom_locale},language=OCL]
 context Module inv uniqueLocale :
-	self.Variable.allInstances -> forall(v1,v2 | v1.nom <> v2.nom implies v1 <> v2)
+	self.Variable.allInstances -> forall(v1,v2 | 
+	v1.nom <> v2.nom implies v1 <> v2)
 \end{lstlisting}
 
 La contrainte sur les noms des paramètres d'un module est la suivante :
 
 \begin{lstlisting}[caption=Nom unique des paramètres,captionpos=b,label={lst:unique_param},language=OCL]
 context Module inv uniqueParam :
-	self.Parametre.allInstances -> forall(p1,p2 | p1.nom <> p2.nom implies p1 <> p2)
+	self.Parametre.allInstances -> forall(p1,p2 | 
+	p1.nom <> p2.nom implies p1 <> p2)
 \end{lstlisting}
 
 La contrainte sur le nom des types soit globalement unique est la suivante :
 
 \begin{lstlisting}[caption=Nom unique des types,captionpos=b,label={lst:type_unique},language=OCL]
 context Type inv difNom :
-	self.allInstances -> forall( e,t | e.oclIsTypeOf(Enumeration) and t.oclIsTypeOf(Tableau) and e.nom <> t.nom)
+	self.allInstances -> forall( e,t | 
+	e.oclIsTypeOf(Enumeration) and t.oclIsTypeOf(Tableau) 
+	and e.nom <> t.nom)
 \end{lstlisting}

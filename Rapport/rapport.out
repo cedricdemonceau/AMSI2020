@@ -13,3 +13,10 @@
 \BOOKMARK [2][-]{subsection.2.7}{Mod\351lisation explicite d'une instruction}{section.2}% 13
 \BOOKMARK [2][-]{subsection.2.8}{Ocl - Contraintes d'unicit\351}{section.2}% 14
 \BOOKMARK [2][-]{subsection.2.9}{Ocl - Contrainte sur les d\351clarations}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.10}{Ocl - Contrats sur l'op\351ration Expression :: type\(\) : Type}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.11}{Op\351ration estTraversableGraceAuxItems\(\) : Boolean}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.12}{Op\351ration ramasser\(\) : Void}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.13}{Op\351ration Instruction :: estValide : Boolean}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.14}{Contrainte sur la coh\351rence des r\350gles}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.15}{Diagramme d'objet d'une strat\351gie}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.16}{Maturit\351 et Modularit\351}{section.2}% 22

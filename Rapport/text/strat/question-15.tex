@@ -25,7 +25,8 @@ La contrainte sur l'unicité du nom des champs est la suivante :
 
 \begin{lstlisting}[caption=Nom unique des champs,captionpos=b,label={lst:champ_unique},language=OCL]
 context Enregistrement inv nomChamp :
-	self.Champ.allInstances -> forall( c1,c2 | c1.nom <> c2.nom implies c1 <> c2)
+	self.Champ.allInstances -> forall( c1,c2 | 
+	c1.nom <> c2.nom implies c1 <> c2)
 \end{lstlisting}
 
 La contrainte sur la dimension d'un tableau est la suivante :
