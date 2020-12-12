@@ -10,7 +10,7 @@ Le fait que les matchs sont identifiés de manière unique se caractérise par c
 
 \begin{lstlisting}[caption=Contrainte sur l'unicité d'un match,captionpos=b,label={lst:match},language=OCL]
 context Jeu inv matchUnique :
-    self.Match.allInstances -> forall( m1,m2 |
+    self.Match.allInstances() -> forall( m1,m2 |
         m1.id <> m2.id implies m1 <> m2)
 \end{lstlisting}
 
@@ -18,7 +18,7 @@ La contrainte que des joueurs ont des pseudos différents au sein du jeu se cara
 
 \begin{lstlisting}[caption=Contrainte sur les pseudos,captionpos=b,label={lst:pseudos},language=OCL]
 context Jeu inv pseudoJoueur :
-    self.Joueurs.allInstances -> forall( j1,j2 |
+    self.Joueurs.allInstances() -> forall( j1,j2 |
         j1.pseudo <> j2.pseudo implies j1 <> j2)
 \end{lstlisting}
 
@@ -26,7 +26,7 @@ La contrainte Ocl disant que les personnages/avatars d'un joueur sont nommés di
 
 \begin{lstlisting}[caption=Contrainte sur le nom,captionpos=b,label={lst:nomAvatar},language=OCL]
 context Joueurs inv nomAvatars :
-    self.Avatar.allInstances -> forall( a1,a2 |
+    self.Avatar.allInstances() -> forall( a1,a2 |
         a1.nom <> a2.nom and a1.aspect <> a2.aspect
             implies a1 <> a2)
 \end{lstlisting}
@@ -35,6 +35,6 @@ La contrainte Ocl obligeant les rencontres à avoir un numéro d'ordre unique es
 
 \begin{lstlisting}[caption=Contrainte sur le numéro d'ordre unique,captionpos=b,label={lst:numUnique},language=OCL]
 context Match inv ordre :
-    self.rencontres.allInstances -> forall( r1,r2 |
+    self.rencontres.allInstances() -> forall( r1,r2 |
         r1.numeroOrdre <> r2.numeroOrdre implies r1 <> r2)
 \end{lstlisting}

@@ -36,18 +36,22 @@ La contrainte exprimant que le numéro identifiant la rencontre correspond à so
 
 \begin{lstlisting}[caption=Contrainte sur l'ordre des rencontres,captionpos=b,label={lst:ordreRencontres},language=OCL]
 context Match inv ordone :
-	self.rencontre.allInstances -> asOrderedSet()
+	self.rencontre.allInstances() -> asOrderedSet()
 \end{lstlisting}
 
 La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe par l'héritage d'\emph{Objet} (figure \ref{fig:Jeu}).
 
+\vspace*{2cm}
+
 La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe par l'association possède entre \emph{Monde} et \emph{Graal} (figure\ref{fig:Jeu}).
+
+\vspace*{2cm}
 
 La contrainte du fait que les cases ne peuvent excéder la longueur d'un monde est la suivante:
 
 \begin{lstlisting}[caption=Contrainte sur la position des cases,captionpos=b,label={lst:casePos},language=OCL]
 context Monde inv posCases :
-	self.case.allInstances -> forall ( c |
+	self.case.allInstances() -> forall ( c |
 		c.position.x >= 0 and c.position.x < self.tailleX and
 		c.position.y >= 0 and c.position.y < self.tailleY)
 \end{lstlisting}
@@ -59,7 +63,7 @@ Le fait que le joueur se trouve dans la case correspondant à sa position absolu
 
 \begin{lstlisting}[caption=Contrainte sur la position du joueur,captionpos=b,label={lst:posJoueur},language=OCL]
 context Avatar inv posAbsolue :
-	self.rencontre.monde.case.allInstances -> forall ( c1,c2 |
+	self.rencontre.monde.case.allInstances() -> forall ( c1,c2 |
 		self.position.x = c1.position.x and 
 		self.position.y = c1.position.y implies
 		self.position.x <> c2.position.x and 
@@ -70,7 +74,7 @@ Le fait que la bordure d'un plateau contienne toujours des éléments infranchis
 
 \begin{lstlisting}[caption=Contrainte sur la bordure du plateau,captionpos=b,label={lst:bordurePlat},language=OCL]
 context Monde inv Infranchissable :
-	self.case.allInstances -> forall(c |
+	self.case.allInstances() -> forall(c |
 		(c.position.x = 0 and c.position.y <= 0 and 
 		c.position.y > self.tailleY or
 		c.position.x = self.tailleX - 1 and 
@@ -88,7 +92,7 @@ Le fait qu'un personnage ne puisse se trouver sur une case portant un obstacle i
 
 \begin{lstlisting}[caption=Contrainte sur la position du joueur sur case infranchissable,captionpos=b,label={lst:caseInfranchissable},language=OCL]
 context Monde inv posJoueurCase :
-	if self.case.allInstances -> oclIsTypeOf(Infranchissable) and
+	if self.case.allInstances() -> oclIsTypeOf(Infranchissable) and
 		self.case.position.x = self.rencontre.avatar.position.x and
 		self.case.position.y = self.rencontre.avatar.position.y
 	then
@@ -100,9 +104,9 @@ context Monde inv posJoueurCase :
 
 Le fait que 2 personnages ( zombie compris) ne puissent se trouver sur la même case est caractérisé par la contrainte suivante :
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Contrainte sur la position de deux personnages,captionpos=b,label={lst:posPersonnages},language=OCL]
 context Personnage inv memeCase :
-	self.allInstances -> forall ( p1,p2 |
+	self.allInstances() -> forall ( p1,p2 |
 		p1.position.x = p2.position.x and 
 		p1.position.y = p2.position.y implies
 		p1 = p2)

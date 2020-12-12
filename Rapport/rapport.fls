@@ -262,25 +262,10 @@ INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecr
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game.tex
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game.tex
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-1.tex
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-1.tex
-INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-2.tex
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-2.tex
-INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
-INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.toc
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.toc
+INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
@@ -302,6 +287,26 @@ INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.f
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
+INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
+OUTPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.toc
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-1.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-1.tex
+INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\diagrammeclassebase.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-2.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-2.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Jeu.png
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-3.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-3.tex
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecxc1440.tfm
@@ -311,9 +316,17 @@ INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlan
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.sty
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
-INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-4.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-4.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-5.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-5.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-6.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\game\question-6.tex
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Diagramme_objet.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Diagramme_objet.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Diagramme_objet.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Diagramme_objet.png
+INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\assets\Diagramme_objet.png
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-7.tex
@@ -372,7 +385,6 @@ INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-15.te
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-16.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-16.tex
 INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbi1440.tfm
-INPUT C:\Users\matth\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-17.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-17.tex
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-18.tex
@@ -393,20 +405,20 @@ INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\text\strat\question-22.te
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.aux
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.out
 INPUT c:\Users\matth\Documents\GitHub\AMSI2020\Rapport\rapport.out
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1440.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1440.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1440.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1440.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\matth\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2488.pk

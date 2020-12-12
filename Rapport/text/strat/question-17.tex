@@ -15,15 +15,15 @@ context estTraversableGraceAuxItems(Case,Avatar) : Boolean :
     post :
         if Case.oclIsTypeOf(Zone) and (
             Case.aspect = Feu and
-            Avatar.Inventaire.Objet.allInstances ->
+            Avatar.Inventaire.Objet.allInstances() ->
                 forall(o | o.oclIsTypeOf(Bottes Pare-Feu))
             or
             Case.aspect = Eau and
-            Avatar.Inventaire.Objet.allInstances ->
+            Avatar.Inventaire.Objet.allInstances() ->
                 forall(o | o.oclIsTypeOf(Kit De Plongee))
             or
             Case.aspect = Glace and
-            Avatar.Inventaire.Objet.allInstances ->
+            Avatar.Inventaire.Objet.allInstances() ->
                 forall(o | o.oclIsTypeOf(Bottes a crampon))
         )
         then

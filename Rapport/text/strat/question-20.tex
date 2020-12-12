@@ -12,7 +12,7 @@ Les contraintes sur la cohérence des règles sont les suivantes :
 
 \begin{lstlisting}[caption=Contrainte sur les priorités,captionpos=b,label={lst:règles},language=OCL]
 context Objectif inv prioRegle :
-    self.Regle.allInstances -> forall( r1,r2 |
+    self.Regle.allInstances() -> forall( r1,r2 |
         r1 <> r2 implies r1.priorite <> r2.priorite)
 \end{lstlisting}
 

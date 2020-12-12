@@ -8,9 +8,9 @@
 
 La première contrainte sur l'unicité des littéraux est la suivante :
 
-\begin{lstlisting}[caption=unicité des litéraux,captionpos=b,label={lst:lit_unique},language=OCL]
+\begin{lstlisting}[caption=unicité des littéraux,captionpos=b,label={lst:lit_unique},language=OCL]
 context enumeration inv literauxUnique :
-	self.Literal.allInstances -> forall( l1,l2 | 
+	self.Literal.allInstances() -> forall( l1,l2 | 
 		l1.nom <> l2.nom implies l1 <> l2)
 \end{lstlisting}
 
@@ -18,14 +18,14 @@ La contrainte sur la liste des champs est la suivante :
 
 \begin{lstlisting}[caption=champ non vide,captionpos=b,label={lst:champ},language=OCL]
 context Enregistrement inv champNonVide :
-	self.Champ.allInstances -> size() > 0
+	self.Champ.allInstances() -> size() > 0
 \end{lstlisting}
 
 La contrainte sur l'unicité du nom des champs est la suivante :
 
 \begin{lstlisting}[caption=Nom unique des champs,captionpos=b,label={lst:champ_unique},language=OCL]
 context Enregistrement inv nomChamp :
-	self.Champ.allInstances -> forall( c1,c2 | 
+	self.Champ.allInstances() -> forall( c1,c2 | 
 	c1.nom <> c2.nom implies c1 <> c2)
 \end{lstlisting}
 
@@ -40,5 +40,5 @@ La contrainte sur la dimension positive des tableaux est la suivante :
 
 \begin{lstlisting}[caption=Dimension positive,captionpos=b,label={lst:dim_positive},language=OCL]
 context Tableau inv dimPositive :
-	self.allInstances -> forall(t | t.possede.longueur > 0)
+	self.allInstances() -> forall(t | t.possede.longueur > 0)
 \end{lstlisting}
