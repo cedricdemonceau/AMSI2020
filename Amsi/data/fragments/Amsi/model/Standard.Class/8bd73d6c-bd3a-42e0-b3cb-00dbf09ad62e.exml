@@ -75,21 +75,6 @@
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
-      <COMP relation="Parent">
-        <OBJECT>
-          <ID name="Generalization" mc="Standard.Generalization" uid="b9f6cf91-2c0e-4cc5-a7a2-b86f100e5d7c"/>
-          <ATTRIBUTES>
-            <ATT name="Discriminator"></ATT>
-            <ATT name="Name"><![CDATA[Generalization]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SuperType">
-              <ID name="Déclaration" mc="Standard.Class" uid="4e22ffc8-eb28-494c-8798-84900d4ee771"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

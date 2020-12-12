@@ -1,0 +1,36 @@
+%% question-18.tex
+%%
+
+%% ==============================
+\subsection{Opération ramasser() : Void}
+\label{sec:question18}
+%% ==============================
+
+L'opération est définie sur Avatar et ses paramètres sont Case et Avatar
+
+Le contrat d'une telle opération est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur l'opération ramasser,captionpos=b,label={lst:ramasser},language=OCL]
+context ramasser(Case,Avatar) : Void
+    post:
+        if Case.typeItem.oclIsTypeOf(bonusAttaque)
+            then
+                Avatar.ratioAttaque x Case.typeItem.valeur
+        endif
+
+        if Case.typeItem.oclIsTypeOf(bonusDefense)
+            then
+                Avatar.ratioDefense x Case.typeItem.valeur
+        endif
+
+        if Case.typeItem.oclIsTypeOf(Radar)
+            then
+                Avatar.portéeDeVisibilité x 2
+        endif
+
+        if Case.typeItem.oclIsTypeOf(Ramassable) or
+            Case.typeItem.oclIsTypeOf(Aide)
+            then
+                Avatar.Inventaire.ajouterItem(case.typeItem)
+        endif
+\end{lstlisting}

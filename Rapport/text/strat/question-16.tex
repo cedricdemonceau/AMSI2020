@@ -2,37 +2,85 @@
 %%
 
 %% ==============================
-\subsection{Diagramme d'objet UML pour le \guillemotleft niveau du sapin\guillemotright}
-\label{sec:question15}
+\subsection{\textsc{Ocl} - Contrats sur l'opération \emph{Expression :: type() : Type}
+\label{sec:question16}
 %% ==============================
 
-Le code de résolution du niveau présenté à la figure \ref{fig:level}, une fois l'arbre retiré, est  le suivant (Listing \ref{lst:code_level}) :
+Ce premier contrat porte sur le fait que le type du litéral retourné corresponde au litéral :
 
-\begin{figure}
-	\centering
-	\includegraphics[width=300pt]{assets/level}
-	\caption{Le niveau à résoudre}
-	\label{fig:level}
-\end{figure}
-
-\begin{lstlisting}[caption=Le code permettant de résoudre le niveau,captionpos=b,label={lst:code_level},language=Java]
-up(2)
-right(2)
-/* Permet de changer de direction 
-   vers le bas sans se deplacer */
-directionDown() 
-fight()
-down(2)
-dig()
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type des litéraux,captionpos=b,label={lst:type_literal},language=OCL]
+context Expression :: type() : Type
+	post:
+		if Type.oclIsTypeOf(TypePrimitif) then
+			return Type.oclType()
 \end{lstlisting}
 
-Dans la résolution, nous avons utilisé une instruction d'action \emph{directionDown} qui permet de modifier la direction dans laquelle regarde le joueur sans changer de position. Cela permet de se mettre dans la direction pour frapper l'ennemi.
+Le contrat sur l'opérateur unaire est la suivante :
 
-A partir du code de la solution et de notre diagramme UML, nous pouvons représenter le diagramme d'objet avec la structure présentée ci-après (Figure \ref{fig:diag_obj_1}).
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type unaire,captionpos=b,label={lst:type_unaire},language=OCL]
+context Expression :: type() : Type
+	post:
+		if Type.oclIsTypeOf(Unaire) then
+			if Type.operateur.oclIsTypeOf(
+				Type.sous-expression.oclType()
+			) then
+				return Type.operateur.oclType()
+\end{lstlisting}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=500pt]{assets/obj__NiveauSapin}
-	\caption{Diagramme d'objet du programme du niveau du sapin}
-	\label{fig:diag_obj_1}
-\end{figure}
+Le contrat correspondant à l'opérateur binaire est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type binaire,captionpos=b,label={lst:type_binaire},language=OCL]
+context Expression :: type() : Type
+	post:
+		if Type.oclIsTypeOf(Binaire) then
+			if Type.operateur.oclIsTypeOf(
+				Type.leftHandSide.oclType()
+			) and Type.operateur.oclIsTypeOf(
+				Type.rightHandSide.oclType()
+			) then
+				return Type.operateur.oclType()
+\end{lstlisting}
+
+Le contrat sur le type de la sous-expression dans une parenthèse est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type paranthésée,captionpos=b,label={lst:type_paranthese},language=OCL]
+context Expression :: type() : Type
+	post:
+		if Type.oclIsTypeOf(Parenthese) then
+			return Type.sous-expression.oclType()
+\end{lstlisting}
+
+Le contrat sur le type de la déclaration est le suivant :
+
+Le contrat sur le type de renvoi d'une énumération de litéraux est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type de renvoi d'une énum de litéraux,captionpos=b,label={lst:type_énum},language=OCL]
+context Expression :: type() : Type
+	post :
+		if Type.oclIsTypeOf(Litteral)
+		then
+			return
+				Type.est.oslType()
+\end{lstlisting}
+
+Le contrat sur le type de retour d'un champ est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type de retour d'un champ,captionpos=b,label={lst:type_champ},language=OCL]
+context Expression :: type() : Type
+	post :
+		if Type.oclIsTypeOf(Champ)
+		then
+			return
+			Type.TypePrimitif.oclType()
+\end{lstlisting}
+
+Le contrat sur le type du contenu d'un tableau est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur le type de retour d'un tableau,captionpos=b,label={lst:type_tableau},language=OCL]
+context Expression :: type() : Type
+	post :
+		if Type.oclIsTypeOf(Tableau)
+		then
+		 return
+		 	Type.est.oclType()
+\end{lstlisting}

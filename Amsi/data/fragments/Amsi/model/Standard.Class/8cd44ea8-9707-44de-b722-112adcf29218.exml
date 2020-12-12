@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Paramètre" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Parametre" version="4">
   <OBJECT>
-    <ID name="Paramètre" mc="Standard.Class" uid="8cd44ea8-9707-44de-b722-112adcf29218"/>
+    <ID name="Parametre" mc="Standard.Class" uid="8cd44ea8-9707-44de-b722-112adcf29218"/>
     <PID name="Q 4.12 Expressions" mc="Standard.Package" uid="2f684e65-b6ce-47db-8b3f-4ef33f283752"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Paramètre]]></ATT>
+      <ATT name="Name"><![CDATA[Parametre]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

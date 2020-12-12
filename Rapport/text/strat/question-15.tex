@@ -2,148 +2,42 @@
 %%
 
 %% ==============================
-\subsection{\textsc{Ocl} - Contrats sur l'opération \emph{prec\_mouv() : Déplacement}}
+\subsection{\textsc{Ocl} - Contrainte sur les déclarations}
 \label{sec:question15}
 %% ==============================
 
-Le premier contract OCL (Listing \ref{lst:action_move}) va permet de vérifier que lors d'un déplacement, si on tente d'accéder à une case ou se trouve un obstacle, le déplacement n'est pas effectué.
+La première contrainte sur l'unicité des litéraux est la suivante :
 
- \begin{lstlisting}[caption=On empêche le déplacement si la case est occupée par un obstacle,captionpos=b,label={lst:action_move},language=OCL]
-context ProcedureAction::right()
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post rightObstacle:
-		if 	NiveauEnCours::getElementAtPosition(player.Position.X + 1, 
-			player.Position.Y).oclIsTypeOf(Obstacle) then
-			player.Position.X == player.Position.X@pre and
-			player.Position.Y == player.Position.Y@pre
-			
-context ProcedureAction::left()
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post leftObstacle:
-		if 	NiveauEnCours::getElementAtPosition(player.Position.X - 1, 
-			player.Position.Y).oclIsTypeOf(Obstacle) then
-			player.Position.X == player.Position.X@pre and
-			player.Position.Y == player.Position.Y@pre
-			
-context ProcedureAction::up()
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post upObstacle:
-		if 	NiveauEnCours::getElementAtPosition(player.Position.X , 
-			player.Position.Y - 1).oclIsTypeOf(Obstacle) then
-			player.Position.X == player.Position.X@pre and
-			pPlayer.Position.Y == player.Position.Y@pre
-			
-context ProcedureAction::down()
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post downObstacle:
-		if 	NiveauEnCours::getElementAtPosition(player.Position.X, 
-			player.Position.Y + 1).oclIsTypeOf(Obstacle) then
-			player.Position.X == player.Position.X@pre and
-			player.Position.Y == player.Position.Y@pre
+\begin{lstlisting}[caption=unicité des litéraux,captionpos=b,label={lst:lit_unique},language=OCL]
+context enumeration inv literauxUnique :
+	self.Literal.allInstances -> forall( l1,l2 | 
+		l1.nom <> l2.nom implies l1 <> l2)
 \end{lstlisting}
 
-Le contrat OCL (Listing \ref{lst:action_tunnel}) suivant indique que si le joueur accède à une case ou ce trouve un tunnel, il ressort dans la case suivant le dernier mouvement à partir de l'autre tunnel.
+La contrainte sur la liste des champs est la suivante :
 
-\begin{lstlisting}[caption=Contract OCL pour le passage dans un tunnel,captionpos=b,label={lst:action_tunnel},language=OCL]
-context ProcedureAction::right()
-	def: tunnel : Position
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post:
-		tunnel = NiveauEnCours::getElementAtPosition(
-		player.PositionX + 1, Player.PositionY)
-			
-		if tunnel.oclIsTypeOf(Tunnel) then
-			player.Position.X == tunnel.Sortie.X + 1 
-			and player.Position.Y == tunnel.Sortie.Y
-
-context ProcedureAction::left()
-	def: tunnel : Position
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post:
-		tunnel = NiveauEnCours::getElementAtPosition(
-		player.PositionX - 1, Player.PositionY)
-			
-		if tunnel.oclIsTypeOf(Tunnel) then
-			player.Position.X == tunnel.Sortie.X - 1
-			and player.Position.Y == tunnel.Sortie.Y
-			
-context ProcedureAction::up()
-	def: tunnel : Position
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post:
-		tunnel = NiveauEnCours::getElementAtPosition(
-		player.PositionX, Player.PositionY - 1)
-			
-		if tunnel.oclIsTypeOf(Tunnel) then
-			player.Position.X == tunnel.Sortie.X and
-			player.Position.Y == tunnel.Sortie.Y - 1
-
-context ProcedureAction::down()
-	def: tunnel : Position
-	def: player = NiveauEnCours::elements.select(e -> e.name == "Cody"
-					and e.oclIsTypeOf(Player))
-	post:
-		tunnel = NiveauEnCours::getElementAtPosition(
-		player.PositionX, Player.PositionY + 1)
-			
-		if tunnel.oclIsTypeOf(Tunnel) then
-			player.Position.X == tunnel.Sortie.X and
-			player.Position.Y == tunnel.Sortie.Y + 1
+\begin{lstlisting}[caption=champ non vide,captionpos=b,label={lst:champ},language=OCL]
+context Enregistrement inv champNonVide :
+	self.Champ.allInstances -> size() > 0
 \end{lstlisting}
 
-Enfin, le dernier contract OCL (Listing \ref{lst:action_jump}) permet d'indiquer que si le joueur saute, il atterit deux cases plus loin dans la même direction. Par contre, s'il y a un obstacle deux cases plus loin, le joueur ne bouge pas.
+La contrainte sur l'unicité du nom des champs est la suivante :
 
-\begin{lstlisting}[caption=Contract OCL psur le saut,captionpos=b,label={lst:action_jump},language=OCL]
-context ProcedureAction::jump()
-	def: newPosition : Position
-	def: player = Niveau::elements.select(e -> e.name == "Cody" and
-					e.oclIsTypeOf(Player))
-	post:
-		if prec_mouv() == right then
-			newPosition = NiveauEnCours::getElementAtPosition(
-			player.PositionX + 2, player.PositionY)
-			
-			if newPosition.oclIsTypeOf(Surface) then
-				player.Position.X == player.Position.X@pre + 2 
-				and player.Position.Y == player.Position.Y@pre
-			else
-				player.Position.X == player.Position.X@pre 
-				and player.Position.Y == player.Position.Y@pre
-		if prec_mouv() == left then
-			newPosition = NiveauEnCours::getElementAtPosition(
-			player.PositionX - 2, player.PositionY)
-			
-			if newPosition.oclIsTypeOf(Surface) then
-				player.Position.X == player.Position.X@pre - 2 
-				and player.Position.Y == player.Position.Y@pre
-			else		
-				player.Position.X == player.Position.X@pre 
-				and player.Position.Y == player.Position.Y@pre
-		if prec_mouv() == up then
-			newPosition = NiveauEnCours::getElementAtPosition(
-			player.PositionX, player.PositionY - 2)
-			
-			if newPosition.oclIsTypeOf(Surface) then
-				player.Position.X == player.Position.X@pre
-				and player.Position.Y == player.Position.Y@pre
-			else
-				player.Position.X == player.Position.X@pre 
-				and player.Position.Y == player.Position.Y@pre - 2
-		if prec_mouv() == down then
-			newPosition = NiveauEnCours::getElementAtPosition(
-			player.PositionX, player.PositionY + 2)
-			
-			if newPosition.oclIsTypeOf(Surface) then
-				player.Position.X == player.Position.X@pre 
-				and player.Position.Y == player.Position.Y@pre + 2
-			else
-				player.Position.X == player.Position.X@pre 
-				and player.Position.Y == player.Position.Y@pre
+\begin{lstlisting}[caption=Nom unique des champs,captionpos=b,label={lst:champ_unique},language=OCL]
+context Enregistrement inv nomChamp :
+	self.Champ.allInstances -> forall( c1,c2 | c1.nom <> c2.nom implies c1 <> c2)
+\end{lstlisting}
+
+La contrainte sur la dimension d'un tableau est la suivante :
+
+\begin{lstlisting}[caption=dimension d'un tableau,captionpos=b,label={lst:dim_tableau},language=OCL]
+context Tableau inv simension :
+	self.longueur > 0
+\end{lstlisting}
+
+La contrainte sur la dimension positive des tableaux est la suivante :
+
+\begin{lstlisting}[caption=Dimension positive,captionpos=b,label={lst:dim_positive},language=OCL]
+context Tableau inv dimPositive :
+	self.allInstances -> forall(t | t.possede.longueur > 0)
 \end{lstlisting}

@@ -2,62 +2,53 @@
 %%
 
 %% ==============================
-\subsection{\textsc{Ocl} - Contrats sur l'opération \emph{estValide() : Boolean}}
+\subsection{\textsc{Ocl} - Contraintes d'unicité}
 \label{sec:question14}
 %% ==============================
 
-Ce premier contrat OCL (Listing \ref{lst:valid_declaration}) spécifie qu'un appel de procédure doit référer à une déclaration de procédure dont le nom existe dans le programme.
+La première contrainte d'unicité sur le nom unique des modules est spécifiée comme suit :
 
-\begin{lstlisting}[caption=Contrat sur l'existance du nom de la procédure appellée,captionpos=b,label={lst:valid_declaration},language=OCL]
-context Declaration::estValide()
-	post:
-		if self.oclIsTypeOf(AppelProcedure) then
-			return Procedure.allInstance()
-				->include(p1 | p1.name == self.appel.name)
+\begin{lstlisting}[caption=Nom unique au sein d'une stratégie,captionpos=b,label={lst:nom_unique},language=OCL]
+context Strategie inv nomUnique :
+	if self.Declaration.allInstances -> oclIsTypeOf(Module) and
+		self.Declaration.forall( m1, m2 | m1.nom <> m2.nom)
+	then
+		true
+	else
+		false
+	endif
 \end{lstlisting}
 
-Les gardes des instructions sont une propriété boolean de la classe \emph{Composée} (Figure \ref{fig:instruction}), il n'y a donc pas besoin de contrat OCL pour vérifier que les gardes soient toujours des boolean et que l'instruction soit valide.
+La contrainte sur le nom des variables globales est la suivante :
 
-Le contrat OCL ci-dessous (Listing \ref{lst:valid_action}) spécifie que tous les paramètres d'une instruction \emph{Action} doivent être des entiers.
-
-\begin{lstlisting}[caption=Les paramètres d'une instruction \emph{Action} doivent être des entiers,captionpos=b,label={lst:valid_action},language=OCL]
-context Declaration::estValide()
-	post:
-		if self.oclIsTypeOf(ProcedureAction) then
-			return self.parametres.forAll(
-				p1 | p1.type.oclIsTypeOf(Entier)
-			)
+\begin{lstlisting}[caption=Nom unique d'une variable globale,captionpos=b,label={lst:unique_globale},language=OCL]
+context Strategie inv nomVarGlobal :
+	if self.Declaration.allInstances ->oclIsTypeOf(Variable) and
+		self.Declaration.forall( v1,v2 | v1.nom <> v2.nom)
+	then
+		true
+	else
+		false
+	endif
 \end{lstlisting}
 
+La contrainte sur les variables locales est la suivante :
 
-Le contrat OCL présenté à la figure \ref{lst:valid_param} spécifie que les paramètres effectifs de rang \emph{i} doivent être de même type dans un appel de procédure que dans la déclaration du même nom.
-
-\begin{lstlisting}[caption=Contrat OCL indiquant que les paramètres effectifs doivent être de même type que dans la déclaration,captionpos=b,label={lst:valid_param},language=OCL]
-context Declaration::estValide()
-	if self.oclIsTypeOf(AppelProcedure) then
-		return self.list.forAll(p1 |
-			self.parametres.exists(p2 |
-				p1.oclType() == p2.oclType() and
-				p1.name == p2.name
-			)
-		)	
+\begin{lstlisting}[caption=Nom unique des variables locales,captionpos=b,label={lst:nom_locale},language=OCL]
+context Module inv uniqueLocale :
+	self.Variable.allInstances -> forall(v1,v2 | v1.nom <> v2.nom implies v1 <> v2)
 \end{lstlisting}
 
-Le contrat suivant (Listing \ref{lst:valid_affectation}) indique que la partie gauche et la partie droite d'une affectation doivent être de même type.
+La contrainte sur les noms des paramètres d'un module est la suivante :
 
-\begin{lstlisting}[caption=Contrat OCL spécifiant que la partie gauche et droite d'une affectation ont le même type,captionpos=b,label={lst:valid_affectation},language=OCL]
-context Declaration::estValide()
-	post:
-		if self.oclIsTypeOf(Affectation) then
-			return Expression::type(self.leftHandSide) == 
-				   Expression::type(self.rightHandSide)
+\begin{lstlisting}[caption=Nom unique des paramètres,captionpos=b,label={lst:unique_param},language=OCL]
+context Module inv uniqueParam :
+	self.Parametre.allInstances -> forall(p1,p2 | p1.nom <> p2.nom implies p1 <> p2)
 \end{lstlisting}
 
-Enfin, ce dernier contrat OCL (Listing \ref{lst:valid_void}) spécifie que le type de retour d'une procédure doit toujours être \textsf{void}.
+La contrainte sur le nom des types soit globalement unique est la suivante :
 
-\begin{lstlisting}[caption=Contrat OCL indiquant que le type de retour d'une procédure est toujours void,captionpos=b,label={lst:valid_void},language=OCL]
-context Declaration::estValide()
-	post:
-		if self.oclIsTypeOf(Procedure) then
-			return self.retour.oclIsTypeOf(Void)
+\begin{lstlisting}[caption=Nom unique des types,captionpos=b,label={lst:type_unique},language=OCL]
+context Type inv difNom :
+	self.allInstances -> forall( e,t | e.oclIsTypeOf(Enumeration) and t.oclIsTypeOf(Tableau) and e.nom <> t.nom)
 \end{lstlisting}

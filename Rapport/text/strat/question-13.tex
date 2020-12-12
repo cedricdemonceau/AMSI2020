@@ -2,74 +2,16 @@
 %%
 
 %% ==============================
-\subsection{\textsc{Ocl} - Contrats sur l'opération \emph{type(exp : Expression) : Type}}
+\subsection{Modélisation explicite d'une instruction}
 \label{sec:question13}
 %% ==============================
 
-Dans les différents contrats, la fonction \emph{oclType()} est utilisée. Il s'agit d'une fonction fourni par OCL qui permet d'évaluer le type de l'instance sur laquelle il est appelé \citep{Omg2012}.
+Le concept d'instruction est présenté à l'aide de la figure \ref{fig:instruction}. Une \emph{Instruction} peut être \emph{Skip} qui est une instruction pour passer son tour. Elle à 4 autres enfants qui sont \emph{Conditionnelle}, \emph{Iteration} qui est composé
+de plusieurs instructions, \emph{Affectation} et \emph{Action} qui est lié aux \emph{Action} suivantes.
 
-Le contrat OCL présenté ci-dessous (Listing \ref{lst:type_type}) spécifie que le type des littéraux est le type qui leur correspond.
-
-\begin{lstlisting}[caption=Le type des littéraux est le type qui leur correspond,captionpos=b,label={lst:type_type},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Primitif) then
-			return exp.oclType()
-\end{lstlisting}
-
-Le contrat du listing \ref{lst:type_unaire} indique que le type d'une expression unaire est lié au type de l'opérateur, à condition que sa sous-expression y corresponde.
-
-\begin{lstlisting}[caption=Contrat OCL sur le type unaire,captionpos=b,label={lst:type_unaire},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Unaire) then
-			if exp.operateur.oclIsTypeOf(
-				exp.sous-expression.oclType()
-			) then
-				return exp.operateur.oclType()
-\end{lstlisting}
-
-Le contrat OCL suivant (Listing \ref{lst:type_binaire}) défini qu'un type d'une expression binaire est lié au type de son opérateur.
-
-\begin{lstlisting}[caption=Contrat OCL sur le type binaire,captionpos=b,label={lst:type_binaire},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Binaire) then
-			if exp.operateur.oclIsTypeOf(
-				exp.leftHandSide.oclType()
-			) and exp.operateur.oclIsTypeOf(
-				exp.rightHandSide.oclType()
-			) then
-				return exp.operateur.oclType()
-\end{lstlisting}
-
-Le contrat ci-dessous (Listing \ref{lst:type_paranthese}) spécifie que le type d'une expression paranthésée est le type de sa sous-expression.
-
-\begin{lstlisting}[caption=Contrat OCL sur le type parenthèsée,captionpos=b,label={lst:type_paranthese},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Parenthese) then
-			return exp.sous-expression.oclType()
-\end{lstlisting}
-
-Le contrat suivant (Listing \ref{lst:type_record}) spécifie que le type d'une expression gauche correspondant à l'accès à un champ est le type de sa déclaration dans l'enregistrement.
-
-\begin{lstlisting}[caption=Contrat OCL sur le type d'un enregistrement,captionpos=b,label={lst:type_record},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Binaire) then
-			if exp.rightHandSide.oclIsTypeOf(InvocationChamp) then
-				return exp.rightHandSide.parent
-					.getChamp(exp.rightHandSide.nomChamp)
-					.oclType()
-\end{lstlisting}
-
-Le dernier contrat présenté dans cette section (Listing \ref{lst:type_array}) spécifie que le type d'une expression gauche correspondant à l'accès à une case d'un tableau est le type de la déclaration du tableau.
-
-\begin{lstlisting}[caption=Contrat OCL sur le type d'un tableau,captionpos=b,label={lst:type_array},language=OCL]
-context Expression::type(exp: Expression)
-	post:
-		if exp.oclIsTypeOf(Binaire) then
-			if exp.rightHandSide.oclIsTypeOf(InvocationCellule) then
-				return exp.rightHandSide.source.type.oclType()
-\end{lstlisting}
+\begin{figure}
+	\centering
+	\includegraphics[width=500pt]{assets/class__Instruction}
+	\caption{Diagramme de classe d'une instruction}
+	\label{fig:instruction}
+\end{figure}

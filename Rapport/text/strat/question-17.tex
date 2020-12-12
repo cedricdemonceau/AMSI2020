@@ -1,8 +1,33 @@
-%% question-16.tex
+%% question-17.tex
 %%
 
 %% ==============================
-\subsection{Diagramme d'objet UML pour notre niveau}
-\label{sec:question15}
+\subsection{Opération estTraversableGraceAuxItems() : Boolean}
+\label{sec:question17}
 %% ==============================
 
+La classe de notre diagramme qui pourrait contenir cette opération est Case.
+
+Le contrat de cette définition est le suivant :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur l'opération estTraversableGraceAuxItems,captionpos=b,label={lst:operation},language=OCL]
+context estTraversableGraceAuxItems(Case,Avatar) : Boolean :
+    post :
+        if Case.oclIsTypeOf(Zone) and (
+            Case.aspect = Feu and
+            Avatar.Inventaire.Objet.allInstances ->
+                forall(o | o.oclIsTypeOf(Bottes Pare-Feu))
+            or
+            Case.aspect = Eau and
+            Avatar.Inventaire.Objet.allInstances ->
+                forall(o | o.oclIsTypeOf(Kit De Plongee))
+            or
+            Case.aspect = Glace and
+            Avatar.Inventaire.Objet.allInstances ->
+                forall(o | o.oclIsTypeOf(Bottes a crampon))
+        )
+        then
+            return true
+        endif
+
+\end{lstlisting}

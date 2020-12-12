@@ -1,0 +1,27 @@
+%% question-20.tex
+%%
+
+%% ==============================
+\subsection{Contrainte sur la cohérence des règles}
+\label{sec:question20}
+%% ==============================
+
+Les contraintes sur la cohérence des règles sont les suivantes :
+
+- Toutes les règles d'un même objectif ont des priorités différentes :
+
+\begin{lstlisting}[caption=Contrainte sur les priorités,captionpos=b,label={lst:règles},language=OCL]
+context Objectif inv prioRegle :
+    self.Regle.allInstances -> forall( r1,r2 |
+        r1 <> r2 implies r1.priorité <> r2.priorité)
+\end{lstlisting}
+
+- Une réaction de règle ne contient qu'une seule action SeDéplacer :
+
+\begin{lstlisting}[caption=Contrainte sur SeDéplacer,captionpos=b,label={lst:SeDéplacer},language=OCL]
+context Regle inv seDeplacer :
+    self.Reaction.action.forall (a | 
+    a.oclIsTypeOf(SeDeplacer).size() <= 1)
+\end{lstlisting}
+
+- La contrainte des métarègles est présente dans le diagramme de classe des \emph{Objectif}.

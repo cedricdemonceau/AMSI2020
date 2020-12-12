@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Itération" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Iteration" version="4">
   <OBJECT>
-    <ID name="Itération" mc="Standard.Class" uid="eb2ef048-4e6a-43e1-bdd2-1d303dddc9f9"/>
+    <ID name="Iteration" mc="Standard.Class" uid="eb2ef048-4e6a-43e1-bdd2-1d303dddc9f9"/>
     <PID name="Q 4.13 Instructions" mc="Standard.Package" uid="f5b4961d-8c7b-4702-a5a0-7d95b760b6c5"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Itération]]></ATT>
+      <ATT name="Name"><![CDATA[Iteration]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

@@ -1,0 +1,43 @@
+%% question-19.tex
+%%
+
+%% ==============================
+\subsection{Opération Instruction :: estValide : Boolean}
+\label{sec:question19}
+%% ==============================
+
+Le contrat d'une telle opération est le suivant :
+
+- L'instruction skip est toujours valide :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur l'opération estValide,captionpos=b,label={lst:valide},language=OCL]
+context Instruction :: estValide() : Boolean
+    post :
+        if Instruction.oclIsTypeOf(Skip)
+        then
+            true
+        endif
+\end{lstlisting}
+
+- La garde d'une \emph{Conditionelle} ou d'une \emph{Iteration} est booleéne :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} sur la garde,captionpos=b,label={lst:garde},language=OCL]
+context Instruction :: estValide() : Boolean
+    post :
+        if Instruction.oclIsTypeOf(Conditionelle) or
+            Instruction.oclIsTypeOf(Iteration)
+        then
+            Instruction.garde.oclIsTypeOf(Boolean)
+        endif
+\end{lstlisting}
+
+- La partie gauche et droite d'une \emph{Affectation} sont du même type :
+
+\begin{lstlisting}[caption=Contrat \textsc{Ocl} les parties d'une affectation,captionpos=b,label={lst:parties},language=OCL]
+context Instruction :: estValide() : Boolean
+    post :
+        if Instruction.oclIsTypeOf(Affectation)
+        then
+            Instruction.leftHandSide.oclIsTypeOf(rightHandSide)
+        endif
+\end{lstlisting}
