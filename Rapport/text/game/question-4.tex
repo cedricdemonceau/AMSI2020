@@ -9,12 +9,12 @@
 
 Le fait que le potentiel de vie d'un joueur est toujours positif est caractérisé par la contrainte suivante:
 
-\begin{lstlisting}[caption=Contrainte sur lpotentiel de vie,captionpos=b,label={lst:vie},language=OCL]
+\begin{lstlisting}[caption=Contrainte sur le potentiel de vie,captionpos=b,label={lst:vie},language=OCL]
 context Personnage inv vie :
 	self.potentielDeVie > 0
 \end{lstlisting}
 
-La contrainte exprimant le fait que les ratios d'attaque s'exprime comme suit:
+La contrainte exprimant le fait que les ratios d'attaque et de défense sont des ratios s'exprime comme suit:
 
 \begin{lstlisting}[caption=Contrainte sur les ratios,captionpos=b,label={lst:ratios},language=OCL]
 context Personnage inv ratios :
@@ -25,9 +25,9 @@ context Personnage inv ratios :
 			endif
 \end{lstlisting}
 
-La contrainte sur l'imparité des rencontres est caractérisée comme suit:
+La contrainte sur la non-parité des rencontres est caractérisée comme suit:
 
-\begin{lstlisting}[caption=Contrainte sur l'imparité des rencontres,captionpos=b,label={lst:impair},language=OCL]
+\begin{lstlisting}[caption=Contrainte sur la non-parité des rencontres,captionpos=b,label={lst:impair},language=OCL]
 context Match inv nbRencontre :
 	self.rencontre.size() % 2 = 1
 \end{lstlisting}
@@ -39,11 +39,11 @@ context Match inv ordoné :
 	self.rencontre.allInstances -> asOrderedSet()
 \end{lstlisting}
 
-La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe par l'héritage d'\emph{Objet} \ref{fig:Jeu}.
+La contrainte sur le les 3 types d'items contenu par l'inventaire est représentée dans le diagramme de classe par l'héritage d'\emph{Objet} (figure \ref{fig:Jeu}).
 
-La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe par l'association possède entre \emph{Monde} et \emph{Graal} \ref{fig:Jeu}.
+La contrainte qu'un monde ne possède qu'un \emph{Graal} est aussi représentée dans le diagramme de classe par l'association possède entre \emph{Monde} et \emph{Graal} (figure\ref{fig:Jeu}).
 
-La contrainte du fait que les cases ne peuvent exéder la longueur d'un monde est la suivante:
+La contrainte du fait que les cases ne peuvent excéder la longueur d'un monde est la suivante:
 
 \begin{lstlisting}[caption=Contrainte sur la position des cases,captionpos=b,label={lst:casePos},language=OCL]
 context Monde inv posCases :
